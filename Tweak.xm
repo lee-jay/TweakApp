@@ -1,0 +1,482 @@
+%hook BaseMsgContentViewController
+- (void)setM_bIsInMainFrame:(_Bool )m_bIsInMainFrame { %log; NSLog(@"开始执行 - (void)setM_bIsInMainFrame:(_Bool )m_bIsInMainFrame"); %orig; NSLog(@"结束执行 - (void)setM_bIsInMainFrame:(_Bool )m_bIsInMainFrame"); }
+- (_Bool )m_bIsInMainFrame { %log; NSLog(@"开始执行 - (_Bool )m_bIsInMainFrame"); _Bool  r = %orig; NSLog(@"- (_Bool )m_bIsInMainFrame 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool )m_bIsInMainFrame"); return r; }
+- (void)setM_searchScene:(int )m_searchScene { %log; NSLog(@"开始执行 - (void)setM_searchScene:(int )m_searchScene"); %orig; NSLog(@"结束执行 - (void)setM_searchScene:(int )m_searchScene"); }
+- (int )m_searchScene { %log; NSLog(@"开始执行 - (int )m_searchScene"); int  r = %orig; NSLog(@"- (int )m_searchScene 的返回值 = %d", r); NSLog(@"结束执行 - (int )m_searchScene"); return r; }
+- (void)setM_shareContacts:(NSMutableArray *)m_shareContacts { %log; NSLog(@"开始执行 - (void)setM_shareContacts:(NSMutableArray *)m_shareContacts"); %orig; NSLog(@"结束执行 - (void)setM_shareContacts:(NSMutableArray *)m_shareContacts"); }
+- (NSMutableArray *)m_shareContacts { %log; NSLog(@"开始执行 - (NSMutableArray *)m_shareContacts"); NSMutableArray * r = %orig; NSLog(@"- (NSMutableArray *)m_shareContacts 的返回值 = %@", r); NSLog(@"结束执行 - (NSMutableArray *)m_shareContacts"); return r; }
+- (void)setM_msgReceivingTipsView:(UIView *)m_msgReceivingTipsView { %log; NSLog(@"开始执行 - (void)setM_msgReceivingTipsView:(UIView *)m_msgReceivingTipsView"); %orig; NSLog(@"结束执行 - (void)setM_msgReceivingTipsView:(UIView *)m_msgReceivingTipsView"); }
+- (UIView *)m_msgReceivingTipsView { %log; NSLog(@"开始执行 - (UIView *)m_msgReceivingTipsView"); UIView * r = %orig; NSLog(@"- (UIView *)m_msgReceivingTipsView 的返回值 = %@", r); NSLog(@"结束执行 - (UIView *)m_msgReceivingTipsView"); return r; }
+//- (void).cxx_destruct { %log; NSLog(@"开始执行 - (void).cxx_destruct"); %orig; NSLog(@"结束执行 - (void).cxx_destruct"); }
+- (void)delayScrollUpdatableMsgCellToVisible:(id)arg1 { %log; NSLog(@"开始执行 - (void)delayScrollUpdatableMsgCellToVisible:(id)arg1"); %orig; NSLog(@"结束执行 - (void)delayScrollUpdatableMsgCellToVisible:(id)arg1"); }
+- (void)onUpdatableMsgEntryStateChanged:(id)arg1 { %log; NSLog(@"开始执行 - (void)onUpdatableMsgEntryStateChanged:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onUpdatableMsgEntryStateChanged:(id)arg1"); }
+- (void)onNotifyToShowTips:(id)arg1 { %log; NSLog(@"开始执行 - (void)onNotifyToShowTips:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onNotifyToShowTips:(id)arg1"); }
+- (id)getForwardingMenuActionTarget:(SEL)arg1 { %log; NSLog(@"开始执行 - (id)getForwardingMenuActionTarget:(SEL)arg1"); id r = %orig; NSLog(@"- (id)getForwardingMenuActionTarget:(SEL)arg1 的返回值 = %@", r); NSLog(@"结束执行 - (id)getForwardingMenuActionTarget:(SEL)arg1"); return r; }
+- (void)forwardMenuClickEventWithAction:(SEL)arg1 { %log; NSLog(@"开始执行 - (void)forwardMenuClickEventWithAction:(SEL)arg1"); %orig; NSLog(@"结束执行 - (void)forwardMenuClickEventWithAction:(SEL)arg1"); }
+- (id)getTextMsgCellViewForCoverView { %log; NSLog(@"开始执行 - (id)getTextMsgCellViewForCoverView"); id r = %orig; NSLog(@"- (id)getTextMsgCellViewForCoverView 的返回值 = %@", r); NSLog(@"结束执行 - (id)getTextMsgCellViewForCoverView"); return r; }
+- (void)onDoubleClick { %log; NSLog(@"开始执行 - (void)onDoubleClick"); %orig; NSLog(@"结束执行 - (void)onDoubleClick"); }
+- (void)exitSelectState { %log; NSLog(@"开始执行 - (void)exitSelectState"); %orig; NSLog(@"结束执行 - (void)exitSelectState"); }
+- (void)onRemoveTextSelectView { %log; NSLog(@"开始执行 - (void)onRemoveTextSelectView"); %orig; NSLog(@"结束执行 - (void)onRemoveTextSelectView"); }
+- (void)onTouchBeginMsg:(id)arg1 Touch:(id)arg2 { %log; NSLog(@"开始执行 - (void)onTouchBeginMsg:(id)arg1 Touch:(id)arg2"); %orig; NSLog(@"结束执行 - (void)onTouchBeginMsg:(id)arg1 Touch:(id)arg2"); }
+- (id)getCurrentViewController { %log; NSLog(@"开始执行 - (id)getCurrentViewController"); id r = %orig; NSLog(@"- (id)getCurrentViewController 的返回值 = %@", r); NSLog(@"结束执行 - (id)getCurrentViewController"); return r; }
+- (id)getScrollView { %log; NSLog(@"开始执行 - (id)getScrollView"); id r = %orig; NSLog(@"- (id)getScrollView 的返回值 = %@", r); NSLog(@"结束执行 - (id)getScrollView"); return r; }
+- (id)getTableView { %log; NSLog(@"开始执行 - (id)getTableView"); id r = %orig; NSLog(@"- (id)getTableView 的返回值 = %@", r); NSLog(@"结束执行 - (id)getTableView"); return r; }
+- (void)copyViewDidScroll:(double)arg1 { %log; NSLog(@"开始执行 - (void)copyViewDidScroll:(double)arg1"); %orig; NSLog(@"结束执行 - (void)copyViewDidScroll:(double)arg1"); }
+- (void)tagWeAppLink:(id)arg1 messageWrap:(id)arg2 { %log; NSLog(@"开始执行 - (void)tagWeAppLink:(id)arg1 messageWrap:(id)arg2"); %orig; NSLog(@"结束执行 - (void)tagWeAppLink:(id)arg1 messageWrap:(id)arg2"); }
+- (void)onDeleteMessageFinish { %log; NSLog(@"开始执行 - (void)onDeleteMessageFinish"); %orig; NSLog(@"结束执行 - (void)onDeleteMessageFinish"); }
+- (void)onImportMessageSuccess { %log; NSLog(@"开始执行 - (void)onImportMessageSuccess"); %orig; NSLog(@"结束执行 - (void)onImportMessageSuccess"); }
+- (void)reloadViewInteral { %log; NSLog(@"开始执行 - (void)reloadViewInteral"); %orig; NSLog(@"结束执行 - (void)reloadViewInteral"); }
+- (void)showSightDraftBoxView { %log; NSLog(@"开始执行 - (void)showSightDraftBoxView"); %orig; NSLog(@"结束执行 - (void)showSightDraftBoxView"); }
+- (void)showAttachmentView { %log; NSLog(@"开始执行 - (void)showAttachmentView"); %orig; NSLog(@"结束执行 - (void)showAttachmentView"); }
+- (void)traitCollectionDidChange:(id)arg1 { %log; NSLog(@"开始执行 - (void)traitCollectionDidChange:(id)arg1"); %orig; NSLog(@"结束执行 - (void)traitCollectionDidChange:(id)arg1"); }
+- (void)previewingContext:(id)arg1 commitViewController:(id)arg2 { %log; NSLog(@"开始执行 - (void)previewingContext:(id)arg1 commitViewController:(id)arg2"); %orig; NSLog(@"结束执行 - (void)previewingContext:(id)arg1 commitViewController:(id)arg2"); }
+- (id)previewingContext:(id)arg1 viewControllerForLocation:(struct CGPoint)arg2 { %log; NSLog(@"开始执行 - (id)previewingContext:(id)arg1 viewControllerForLocation:(struct CGPoint)arg2"); id r = %orig; NSLog(@"- (id)previewingContext:(id)arg1 viewControllerForLocation:(struct CGPoint)arg2 的返回值 = %@", r); NSLog(@"结束执行 - (id)previewingContext:(id)arg1 viewControllerForLocation:(struct CGPoint)arg2"); return r; }
+- (id)previewActionItems { %log; NSLog(@"开始执行 - (id)previewActionItems"); id r = %orig; NSLog(@"- (id)previewActionItems 的返回值 = %@", r); NSLog(@"结束执行 - (id)previewActionItems"); return r; }
+- (_Bool)isPeekPreview { %log; NSLog(@"开始执行 - (_Bool)isPeekPreview"); _Bool r = %orig; NSLog(@"- (_Bool)isPeekPreview 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isPeekPreview"); return r; }
+- (void)setIsPeekPreview:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)setIsPeekPreview:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)setIsPeekPreview:(_Bool)arg1"); }
+- (void)onIdleTimerUtilVoipQuit { %log; NSLog(@"开始执行 - (void)onIdleTimerUtilVoipQuit"); %orig; NSLog(@"结束执行 - (void)onIdleTimerUtilVoipQuit"); }
+- (struct CGRect)getVisibleRectInScreen:(id)arg1 { %log; NSLog(@"开始执行 - (struct CGRect)getVisibleRectInScreen:(id)arg1"); struct CGRect r = %orig; NSLog(@"结束执行 - (struct CGRect)getVisibleRectInScreen:(id)arg1"); return r; }
+- (struct CGRect)getInnerVisibleRectInScreen:(struct CGRect)arg1 { %log; NSLog(@"开始执行 - (struct CGRect)getInnerVisibleRectInScreen:(struct CGRect)arg1"); struct CGRect r = %orig; NSLog(@"结束执行 - (struct CGRect)getInnerVisibleRectInScreen:(struct CGRect)arg1"); return r; }
+- (long long)getMessageNodePosition:(id)arg1 { %log; NSLog(@"开始执行 - (long long)getMessageNodePosition:(id)arg1"); long long r = %orig; NSLog(@"- (long long)getMessageNodePosition:(id)arg1 的返回值 = %lld", r); NSLog(@"结束执行 - (long long)getMessageNodePosition:(id)arg1"); return r; }
+- (void)onJumpToViewDetail:(id)arg1 { %log; NSLog(@"开始执行 - (void)onJumpToViewDetail:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onJumpToViewDetail:(id)arg1"); }
+- (void)onMsgImgPreviewDataRequired:(id)arg1 { %log; NSLog(@"开始执行 - (void)onMsgImgPreviewDataRequired:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onMsgImgPreviewDataRequired:(id)arg1"); }
+- (void)onSightViewDetail:(id)arg1 vc:(id)arg2 { %log; NSLog(@"开始执行 - (void)onSightViewDetail:(id)arg1 vc:(id)arg2"); %orig; NSLog(@"结束执行 - (void)onSightViewDetail:(id)arg1 vc:(id)arg2"); }
+- (void)onPlayAttachVideo:(id)arg1 vc:(id)arg2 { %log; NSLog(@"开始执行 - (void)onPlayAttachVideo:(id)arg1 vc:(id)arg2"); %orig; NSLog(@"结束执行 - (void)onPlayAttachVideo:(id)arg1 vc:(id)arg2"); }
+- (void)onImgMsgLocate:(id)arg1 vc:(id)arg2 { %log; NSLog(@"开始执行 - (void)onImgMsgLocate:(id)arg1 vc:(id)arg2"); %orig; NSLog(@"结束执行 - (void)onImgMsgLocate:(id)arg1 vc:(id)arg2"); }
+- (void)onCurrentPageMsgReMoved:(id)arg1 { %log; NSLog(@"开始执行 - (void)onCurrentPageMsgReMoved:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onCurrentPageMsgReMoved:(id)arg1"); }
+- (void)onMsgImgWindowWillHideToMsg:(id)arg1 { %log; NSLog(@"开始执行 - (void)onMsgImgWindowWillHideToMsg:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onMsgImgWindowWillHideToMsg:(id)arg1"); }
+- (void)onSyncEnd { %log; NSLog(@"开始执行 - (void)onSyncEnd"); %orig; NSLog(@"结束执行 - (void)onSyncEnd"); }
+- (void)onNewSyncFinish { %log; NSLog(@"开始执行 - (void)onNewSyncFinish"); %orig; NSLog(@"结束执行 - (void)onNewSyncFinish"); }
+- (void)onNewSyncStart { %log; NSLog(@"开始执行 - (void)onNewSyncStart"); %orig; NSLog(@"结束执行 - (void)onNewSyncStart"); }
+- (void)showReceiveMsgTips { %log; NSLog(@"开始执行 - (void)showReceiveMsgTips"); %orig; NSLog(@"结束执行 - (void)showReceiveMsgTips"); }
+- (void)stopReceiveMsg { %log; NSLog(@"开始执行 - (void)stopReceiveMsg"); %orig; NSLog(@"结束执行 - (void)stopReceiveMsg"); }
+- (void)startReceiveMsgWithTips:(id)arg1 { %log; NSLog(@"开始执行 - (void)startReceiveMsgWithTips:(id)arg1"); %orig; NSLog(@"结束执行 - (void)startReceiveMsgWithTips:(id)arg1"); }
+- (double)getInvisibleHeight { %log; NSLog(@"开始执行 - (double)getInvisibleHeight"); double r = %orig; NSLog(@"- (double)getInvisibleHeight 的返回值 = %f", r); NSLog(@"结束执行 - (double)getInvisibleHeight"); return r; }
+- (_Bool)isContactSizeOverScreen { %log; NSLog(@"开始执行 - (_Bool)isContactSizeOverScreen"); _Bool r = %orig; NSLog(@"- (_Bool)isContactSizeOverScreen 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isContactSizeOverScreen"); return r; }
+- (void)endSearchAndDisplay { %log; NSLog(@"开始执行 - (void)endSearchAndDisplay"); %orig; NSLog(@"结束执行 - (void)endSearchAndDisplay"); }
+- (void)scrollActionSheet:(id)arg1 didSelecteItem:(id)arg2 { %log; NSLog(@"开始执行 - (void)scrollActionSheet:(id)arg1 didSelecteItem:(id)arg2"); %orig; NSLog(@"结束执行 - (void)scrollActionSheet:(id)arg1 didSelecteItem:(id)arg2"); }
+- (void)OnMultiMsgMoreOperation:(id)arg1 { %log; NSLog(@"开始执行 - (void)OnMultiMsgMoreOperation:(id)arg1"); %orig; NSLog(@"结束执行 - (void)OnMultiMsgMoreOperation:(id)arg1"); }
+- (void)ShowMultiSelectMoreOperation:(id)arg1 { %log; NSLog(@"开始执行 - (void)ShowMultiSelectMoreOperation:(id)arg1"); %orig; NSLog(@"结束执行 - (void)ShowMultiSelectMoreOperation:(id)arg1"); }
+- (void)OnMultiEmailMessage:(id)arg1 { %log; NSLog(@"开始执行 - (void)OnMultiEmailMessage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)OnMultiEmailMessage:(id)arg1"); }
+- (void)OnMultiForwardMessage { %log; NSLog(@"开始执行 - (void)OnMultiForwardMessage"); %orig; NSLog(@"结束执行 - (void)OnMultiForwardMessage"); }
+- (void)OnMultiDeleteMessage:(id)arg1 { %log; NSLog(@"开始执行 - (void)OnMultiDeleteMessage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)OnMultiDeleteMessage:(id)arg1"); }
+- (void)OnMultiFavAddMessage { %log; NSLog(@"开始执行 - (void)OnMultiFavAddMessage"); %orig; NSLog(@"结束执行 - (void)OnMultiFavAddMessage"); }
+- (void)showAlertTooMany { %log; NSLog(@"开始执行 - (void)showAlertTooMany"); %orig; NSLog(@"结束执行 - (void)showAlertTooMany"); }
+- (void)onMoreOperateWithMsgId:(id)arg1 { %log; NSLog(@"开始执行 - (void)onMoreOperateWithMsgId:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onMoreOperateWithMsgId:(id)arg1"); }
+- (void)onVideoVoipViewDidAppear:(id)arg1 { %log; NSLog(@"开始执行 - (void)onVideoVoipViewDidAppear:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onVideoVoipViewDidAppear:(id)arg1"); }
+- (void)didRotateFromInterfaceOrientation:(long long)arg1 { %log; NSLog(@"开始执行 - (void)didRotateFromInterfaceOrientation:(long long)arg1"); %orig; NSLog(@"结束执行 - (void)didRotateFromInterfaceOrientation:(long long)arg1"); }
+- (void)willAnimateRotationToInterfaceOrientation:(long long)arg1 duration:(double)arg2 { %log; NSLog(@"开始执行 - (void)willAnimateRotationToInterfaceOrientation:(long long)arg1 duration:(double)arg2"); %orig; NSLog(@"结束执行 - (void)willAnimateRotationToInterfaceOrientation:(long long)arg1 duration:(double)arg2"); }
+- (void)rotate:(long long)arg1 duration:(double)arg2 { %log; NSLog(@"开始执行 - (void)rotate:(long long)arg1 duration:(double)arg2"); %orig; NSLog(@"结束执行 - (void)rotate:(long long)arg1 duration:(double)arg2"); }
+- (void)onTrackRoomTipsViewClick { %log; NSLog(@"开始执行 - (void)onTrackRoomTipsViewClick"); %orig; NSLog(@"结束执行 - (void)onTrackRoomTipsViewClick"); }
+- (void)alertView:(id)arg1 clickedButtonAtIndex:(long long)arg2 { %log; NSLog(@"开始执行 - (void)alertView:(id)arg1 clickedButtonAtIndex:(long long)arg2"); %orig; NSLog(@"结束执行 - (void)alertView:(id)arg1 clickedButtonAtIndex:(long long)arg2"); }
+- (void)hideMultiTalkTips { %log; NSLog(@"开始执行 - (void)hideMultiTalkTips"); %orig; NSLog(@"结束执行 - (void)hideMultiTalkTips"); }
+- (void)hideTrackRoomTips { %log; NSLog(@"开始执行 - (void)hideTrackRoomTips"); %orig; NSLog(@"结束执行 - (void)hideTrackRoomTips"); }
+- (void)showMultiTalkTips { %log; NSLog(@"开始执行 - (void)showMultiTalkTips"); %orig; NSLog(@"结束执行 - (void)showMultiTalkTips"); }
+- (void)showTrackRoomTips { %log; NSLog(@"开始执行 - (void)showTrackRoomTips"); %orig; NSLog(@"结束执行 - (void)showTrackRoomTips"); }
+- (void)updateBanner { %log; NSLog(@"开始执行 - (void)updateBanner"); %orig; NSLog(@"结束执行 - (void)updateBanner"); }
+- (_Bool)shouldHideOrginInputToolView { %log; NSLog(@"开始执行 - (_Bool)shouldHideOrginInputToolView"); _Bool r = %orig; NSLog(@"- (_Bool)shouldHideOrginInputToolView 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)shouldHideOrginInputToolView"); return r; }
+- (double)getCustomizedAreaWidth { %log; NSLog(@"开始执行 - (double)getCustomizedAreaWidth"); double r = %orig; NSLog(@"- (double)getCustomizedAreaWidth 的返回值 = %f", r); NSLog(@"结束执行 - (double)getCustomizedAreaWidth"); return r; }
+- (void)loadingAfterForwardMessageOK { %log; NSLog(@"开始执行 - (void)loadingAfterForwardMessageOK"); %orig; NSLog(@"结束执行 - (void)loadingAfterForwardMessageOK"); }
+- (void)stopLoadingAndAndShowErrorWithText:(id)arg1 { %log; NSLog(@"开始执行 - (void)stopLoadingAndAndShowErrorWithText:(id)arg1"); %orig; NSLog(@"结束执行 - (void)stopLoadingAndAndShowErrorWithText:(id)arg1"); }
+- (void)stopLoadingAndShowOkWithText:(id)arg1 { %log; NSLog(@"开始执行 - (void)stopLoadingAndShowOkWithText:(id)arg1"); %orig; NSLog(@"结束执行 - (void)stopLoadingAndShowOkWithText:(id)arg1"); }
+- (void)stopLoading { %log; NSLog(@"开始执行 - (void)stopLoading"); %orig; NSLog(@"结束执行 - (void)stopLoading"); }
+- (void)showLoadingViewWithText:(id)arg1 { %log; NSLog(@"开始执行 - (void)showLoadingViewWithText:(id)arg1"); %orig; NSLog(@"结束执行 - (void)showLoadingViewWithText:(id)arg1"); }
+- (void)showLoadingView { %log; NSLog(@"开始执行 - (void)showLoadingView"); %orig; NSLog(@"结束执行 - (void)showLoadingView"); }
+- (void)updateChatRoomData:(id)arg1 { %log; NSLog(@"开始执行 - (void)updateChatRoomData:(id)arg1"); %orig; NSLog(@"结束执行 - (void)updateChatRoomData:(id)arg1"); }
+- (id)GetCurrentViewController { %log; NSLog(@"开始执行 - (id)GetCurrentViewController"); id r = %orig; NSLog(@"- (id)GetCurrentViewController 的返回值 = %@", r); NSLog(@"结束执行 - (id)GetCurrentViewController"); return r; }
+- (_Bool)isHiddenInputChangeButton { %log; NSLog(@"开始执行 - (_Bool)isHiddenInputChangeButton"); _Bool r = %orig; NSLog(@"- (_Bool)isHiddenInputChangeButton 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isHiddenInputChangeButton"); return r; }
+- (_Bool)canShowEnterpriseBrandEntry { %log; NSLog(@"开始执行 - (_Bool)canShowEnterpriseBrandEntry"); _Bool r = %orig; NSLog(@"- (_Bool)canShowEnterpriseBrandEntry 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)canShowEnterpriseBrandEntry"); return r; }
+- (_Bool)canShowLocation { %log; NSLog(@"开始执行 - (_Bool)canShowLocation"); _Bool r = %orig; NSLog(@"- (_Bool)canShowLocation 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)canShowLocation"); return r; }
+- (_Bool)canShowFavEntry { %log; NSLog(@"开始执行 - (_Bool)canShowFavEntry"); _Bool r = %orig; NSLog(@"- (_Bool)canShowFavEntry 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)canShowFavEntry"); return r; }
+- (void)initAllowNameCardFollowRedEnvelope { %log; NSLog(@"开始执行 - (void)initAllowNameCardFollowRedEnvelope"); %orig; NSLog(@"结束执行 - (void)initAllowNameCardFollowRedEnvelope"); }
+- (void)initAllowWxTalkFollowSight { %log; NSLog(@"开始执行 - (void)initAllowWxTalkFollowSight"); %orig; NSLog(@"结束执行 - (void)initAllowWxTalkFollowSight"); }
+- (void)initAllowMultiTalk { %log; NSLog(@"开始执行 - (void)initAllowMultiTalk"); %orig; NSLog(@"结束执行 - (void)initAllowMultiTalk"); }
+- (void)initAllowWxTalk { %log; NSLog(@"开始执行 - (void)initAllowWxTalk"); %orig; NSLog(@"结束执行 - (void)initAllowWxTalk"); }
+- (_Bool)isAllowWxTalk { %log; NSLog(@"开始执行 - (_Bool)isAllowWxTalk"); _Bool r = %orig; NSLog(@"- (_Bool)isAllowWxTalk 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isAllowWxTalk"); return r; }
+- (void)initAllowVoiceInput { %log; NSLog(@"开始执行 - (void)initAllowVoiceInput"); %orig; NSLog(@"结束执行 - (void)initAllowVoiceInput"); }
+- (_Bool)isAllowVoiceInput { %log; NSLog(@"开始执行 - (_Bool)isAllowVoiceInput"); _Bool r = %orig; NSLog(@"- (_Bool)isAllowVoiceInput 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isAllowVoiceInput"); return r; }
+- (void)initAllowVoip { %log; NSLog(@"开始执行 - (void)initAllowVoip"); %orig; NSLog(@"结束执行 - (void)initAllowVoip"); }
+- (_Bool)isAllowVoip { %log; NSLog(@"开始执行 - (_Bool)isAllowVoip"); _Bool r = %orig; NSLog(@"- (_Bool)isAllowVoip 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isAllowVoip"); return r; }
+- (void)OnMsgDownloadVideoCommonFail:(id)arg1 MsgWrap:(id)arg2 { %log; NSLog(@"开始执行 - (void)OnMsgDownloadVideoCommonFail:(id)arg1 MsgWrap:(id)arg2"); %orig; NSLog(@"结束执行 - (void)OnMsgDownloadVideoCommonFail:(id)arg1 MsgWrap:(id)arg2"); }
+- (void)OnMsgDownloadVideoExpiredFail:(id)arg1 MsgWrap:(id)arg2 { %log; NSLog(@"开始执行 - (void)OnMsgDownloadVideoExpiredFail:(id)arg1 MsgWrap:(id)arg2"); %orig; NSLog(@"结束执行 - (void)OnMsgDownloadVideoExpiredFail:(id)arg1 MsgWrap:(id)arg2"); }
+- (void)OnMsgDownloadAppAttachCommonFail:(id)arg1 MsgWrap:(id)arg2 { %log; NSLog(@"开始执行 - (void)OnMsgDownloadAppAttachCommonFail:(id)arg1 MsgWrap:(id)arg2"); %orig; NSLog(@"结束执行 - (void)OnMsgDownloadAppAttachCommonFail:(id)arg1 MsgWrap:(id)arg2"); }
+- (void)OnMsgDownloadAppAttachExpiredFail:(id)arg1 MsgWrap:(id)arg2 { %log; NSLog(@"开始执行 - (void)OnMsgDownloadAppAttachExpiredFail:(id)arg1 MsgWrap:(id)arg2"); %orig; NSLog(@"结束执行 - (void)OnMsgDownloadAppAttachExpiredFail:(id)arg1 MsgWrap:(id)arg2"); }
+- (void)OnMsgDownloadThumbFail:(id)arg1 MsgWrap:(id)arg2 { %log; NSLog(@"开始执行 - (void)OnMsgDownloadThumbFail:(id)arg1 MsgWrap:(id)arg2"); %orig; NSLog(@"结束执行 - (void)OnMsgDownloadThumbFail:(id)arg1 MsgWrap:(id)arg2"); }
+- (void)OnMsgDownloadThumbOK:(id)arg1 MsgWrap:(id)arg2 { %log; NSLog(@"开始执行 - (void)OnMsgDownloadThumbOK:(id)arg1 MsgWrap:(id)arg2"); %orig; NSLog(@"结束执行 - (void)OnMsgDownloadThumbOK:(id)arg1 MsgWrap:(id)arg2"); }
+- (id)documentInteractionControllerViewControllerForPreview:(id)arg1 { %log; NSLog(@"开始执行 - (id)documentInteractionControllerViewControllerForPreview:(id)arg1"); id r = %orig; NSLog(@"- (id)documentInteractionControllerViewControllerForPreview:(id)arg1 的返回值 = %@", r); NSLog(@"结束执行 - (id)documentInteractionControllerViewControllerForPreview:(id)arg1"); return r; }
+- (void)OnAppDataPreview:(id)arg1 MsgWrap:(id)arg2 { %log; NSLog(@"开始执行 - (void)OnAppDataPreview:(id)arg1 MsgWrap:(id)arg2"); %orig; NSLog(@"结束执行 - (void)OnAppDataPreview:(id)arg1 MsgWrap:(id)arg2"); }
+- (long long)preferredInterfaceOrientationForPresentation { %log; NSLog(@"开始执行 - (long long)preferredInterfaceOrientationForPresentation"); long long r = %orig; NSLog(@"- (long long)preferredInterfaceOrientationForPresentation 的返回值 = %lld", r); NSLog(@"结束执行 - (long long)preferredInterfaceOrientationForPresentation"); return r; }
+- (void)PreviewAppNode:(id)arg1 MsgWrap:(id)arg2 Pop:(_Bool)arg3 { %log; NSLog(@"开始执行 - (void)PreviewAppNode:(id)arg1 MsgWrap:(id)arg2 Pop:(_Bool)arg3"); %orig; NSLog(@"结束执行 - (void)PreviewAppNode:(id)arg1 MsgWrap:(id)arg2 Pop:(_Bool)arg3"); }
+- (void)updateToolViewOrigin { %log; NSLog(@"开始执行 - (void)updateToolViewOrigin"); %orig; NSLog(@"结束执行 - (void)updateToolViewOrigin"); }
+- (void)adjustViewAndNavBarRect { %log; NSLog(@"开始执行 - (void)adjustViewAndNavBarRect"); %orig; NSLog(@"结束执行 - (void)adjustViewAndNavBarRect"); }
+- (void)adjustDeleteViewRect { %log; NSLog(@"开始执行 - (void)adjustDeleteViewRect"); %orig; NSLog(@"结束执行 - (void)adjustDeleteViewRect"); }
+- (void)hideToolViewAnimated:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)hideToolViewAnimated:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)hideToolViewAnimated:(_Bool)arg1"); }
+- (void)onDeleteAllMsg { %log; NSLog(@"开始执行 - (void)onDeleteAllMsg"); %orig; NSLog(@"结束执行 - (void)onDeleteAllMsg"); }
+- (void)ReloadView { %log; NSLog(@"开始执行 - (void)ReloadView"); %orig; NSLog(@"结束执行 - (void)ReloadView"); }
+- (void)Reset { %log; NSLog(@"开始执行 - (void)Reset"); %orig; NSLog(@"结束执行 - (void)Reset"); }
+- (id)init { %log; NSLog(@"开始执行 - (id)init"); id r = %orig; NSLog(@"- (id)init 的返回值 = %@", r); NSLog(@"结束执行 - (id)init"); return r; }
+- (void)dealloc { %log; NSLog(@"开始执行 - (void)dealloc"); %orig; NSLog(@"结束执行 - (void)dealloc"); }
+- (void)resetToolView { %log; NSLog(@"开始执行 - (void)resetToolView"); %orig; NSLog(@"结束执行 - (void)resetToolView"); }
+- (void)voiceoverStatusChanged { %log; NSLog(@"开始执行 - (void)voiceoverStatusChanged"); %orig; NSLog(@"结束执行 - (void)voiceoverStatusChanged"); }
+- (void)viewDidLoad { %log; NSLog(@"开始执行 - (void)viewDidLoad"); %orig; NSLog(@"结束执行 - (void)viewDidLoad"); }
+- (void)OnSendMessageCancel:(id)arg1 { %log; NSLog(@"开始执行 - (void)OnSendMessageCancel:(id)arg1"); %orig; NSLog(@"结束执行 - (void)OnSendMessageCancel:(id)arg1"); }
+- (void)OnSendMessageFail:(id)arg1 WithError:(int)arg2 { %log; NSLog(@"开始执行 - (void)OnSendMessageFail:(id)arg1 WithError:(int)arg2"); %orig; NSLog(@"结束执行 - (void)OnSendMessageFail:(id)arg1 WithError:(int)arg2"); }
+- (void)OnSendMessageOK:(id)arg1 { %log; NSLog(@"开始执行 - (void)OnSendMessageOK:(id)arg1"); %orig; NSLog(@"结束执行 - (void)OnSendMessageOK:(id)arg1"); }
+- (void)MenuControllerWillHide:(id)arg1 { %log; NSLog(@"开始执行 - (void)MenuControllerWillHide:(id)arg1"); %orig; NSLog(@"结束执行 - (void)MenuControllerWillHide:(id)arg1"); }
+- (void)MenuControllerWillShow:(id)arg1 { %log; NSLog(@"开始执行 - (void)MenuControllerWillShow:(id)arg1"); %orig; NSLog(@"结束执行 - (void)MenuControllerWillShow:(id)arg1"); }
+- (void)lockerTimesup { %log; NSLog(@"开始执行 - (void)lockerTimesup"); %orig; NSLog(@"结束执行 - (void)lockerTimesup"); }
+- (void)beginLockerTimer { %log; NSLog(@"开始执行 - (void)beginLockerTimer"); %orig; NSLog(@"结束执行 - (void)beginLockerTimer"); }
+- (void)stopLockerTimesup { %log; NSLog(@"开始执行 - (void)stopLockerTimesup"); %orig; NSLog(@"结束执行 - (void)stopLockerTimesup"); }
+- (void)onTipViewClick:(id)arg1 { %log; NSLog(@"开始执行 - (void)onTipViewClick:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onTipViewClick:(id)arg1"); }
+- (id)getLastContentMessageNodeFromArray:(id)arg1 { %log; NSLog(@"开始执行 - (id)getLastContentMessageNodeFromArray:(id)arg1"); id r = %orig; NSLog(@"- (id)getLastContentMessageNodeFromArray:(id)arg1 的返回值 = %@", r); NSLog(@"结束执行 - (id)getLastContentMessageNodeFromArray:(id)arg1"); return r; }
+- (id)getFirstContentMessageNodeFromArray:(id)arg1 { %log; NSLog(@"开始执行 - (id)getFirstContentMessageNodeFromArray:(id)arg1"); id r = %orig; NSLog(@"- (id)getFirstContentMessageNodeFromArray:(id)arg1 的返回值 = %@", r); NSLog(@"结束执行 - (id)getFirstContentMessageNodeFromArray:(id)arg1"); return r; }
+- (void)scrollToFirstUnReadMessage:(id)arg1 { %log; NSLog(@"开始执行 - (void)scrollToFirstUnReadMessage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)scrollToFirstUnReadMessage:(id)arg1"); }
+- (unsigned long long)getFirstUnReadMessageIndex { %log; NSLog(@"开始执行 - (unsigned long long)getFirstUnReadMessageIndex"); unsigned long long r = %orig; NSLog(@"- (unsigned long long)getFirstUnReadMessageIndex 的返回值 = %llu", r); NSLog(@"结束执行 - (unsigned long long)getFirstUnReadMessageIndex"); return r; }
+- (unsigned long long)getFirstUnReadSplitNodeIndex { %log; NSLog(@"开始执行 - (unsigned long long)getFirstUnReadSplitNodeIndex"); unsigned long long r = %orig; NSLog(@"- (unsigned long long)getFirstUnReadSplitNodeIndex 的返回值 = %llu", r); NSLog(@"结束执行 - (unsigned long long)getFirstUnReadSplitNodeIndex"); return r; }
+- (void)onScrollToFirstUnReadMsg { %log; NSLog(@"开始执行 - (void)onScrollToFirstUnReadMsg"); %orig; NSLog(@"结束执行 - (void)onScrollToFirstUnReadMsg"); }
+- (void)tryAddUnReadSplitNode { %log; NSLog(@"开始执行 - (void)tryAddUnReadSplitNode"); %orig; NSLog(@"结束执行 - (void)tryAddUnReadSplitNode"); }
+- (void)updateFirstUnReadButtonOnShowBanner:(double)arg1 { %log; NSLog(@"开始执行 - (void)updateFirstUnReadButtonOnShowBanner:(double)arg1"); %orig; NSLog(@"结束执行 - (void)updateFirstUnReadButtonOnShowBanner:(double)arg1"); }
+- (void)animateHideFirstUnReadButton { %log; NSLog(@"开始执行 - (void)animateHideFirstUnReadButton"); %orig; NSLog(@"结束执行 - (void)animateHideFirstUnReadButton"); }
+- (void)animateShowFirstUnReadButton { %log; NSLog(@"开始执行 - (void)animateShowFirstUnReadButton"); %orig; NSLog(@"结束执行 - (void)animateShowFirstUnReadButton"); }
+- (void)tryShowFirstUnReadButtonAnimated { %log; NSLog(@"开始执行 - (void)tryShowFirstUnReadButtonAnimated"); %orig; NSLog(@"结束执行 - (void)tryShowFirstUnReadButtonAnimated"); }
+- (void)onTrySHowFirstUnReadButton { %log; NSLog(@"开始执行 - (void)onTrySHowFirstUnReadButton"); %orig; NSLog(@"结束执行 - (void)onTrySHowFirstUnReadButton"); }
+- (double)getVisibleHeight { %log; NSLog(@"开始执行 - (double)getVisibleHeight"); double r = %orig; NSLog(@"- (double)getVisibleHeight 的返回值 = %f", r); NSLog(@"结束执行 - (double)getVisibleHeight"); return r; }
+- (double)getTableViewVisibleHeightWithOrientation:(long long)arg1 { %log; NSLog(@"开始执行 - (double)getTableViewVisibleHeightWithOrientation:(long long)arg1"); double r = %orig; NSLog(@"- (double)getTableViewVisibleHeightWithOrientation:(long long)arg1 的返回值 = %f", r); NSLog(@"结束执行 - (double)getTableViewVisibleHeightWithOrientation:(long long)arg1"); return r; }
+- (void)viewWillBePresented:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewWillBePresented:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewWillBePresented:(_Bool)arg1"); }
+- (void)viewWillBeDismissed:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewWillBeDismissed:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewWillBeDismissed:(_Bool)arg1"); }
+- (void)willShow { %log; NSLog(@"开始执行 - (void)willShow"); %orig; NSLog(@"结束执行 - (void)willShow"); }
+- (void)viewDidBeDismissed:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewDidBeDismissed:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewDidBeDismissed:(_Bool)arg1"); }
+- (void)viewDidBePresented:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewDidBePresented:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewDidBePresented:(_Bool)arg1"); }
+- (void)viewWillPresent:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewWillPresent:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewWillPresent:(_Bool)arg1"); }
+- (void)viewWillBePushed:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewWillBePushed:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewWillBePushed:(_Bool)arg1"); }
+- (void)viewWillBePoped:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewWillBePoped:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewWillBePoped:(_Bool)arg1"); }
+- (void)viewWillPop:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewWillPop:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewWillPop:(_Bool)arg1"); }
+- (void)removeVoipAndPhoneTip { %log; NSLog(@"开始执行 - (void)removeVoipAndPhoneTip"); %orig; NSLog(@"结束执行 - (void)removeVoipAndPhoneTip"); }
+- (void)removeVoiceTip { %log; NSLog(@"开始执行 - (void)removeVoiceTip"); %orig; NSLog(@"结束执行 - (void)removeVoiceTip"); }
+- (void)viewDidBePushed:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewDidBePushed:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewDidBePushed:(_Bool)arg1"); }
+- (_Bool)willMoveToMainFrame { %log; NSLog(@"开始执行 - (_Bool)willMoveToMainFrame"); _Bool r = %orig; NSLog(@"- (_Bool)willMoveToMainFrame 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)willMoveToMainFrame"); return r; }
+- (void)tryMoveToMainFrame { %log; NSLog(@"开始执行 - (void)tryMoveToMainFrame"); %orig; NSLog(@"结束执行 - (void)tryMoveToMainFrame"); }
+- (void)viewDidPop:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewDidPop:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewDidPop:(_Bool)arg1"); }
+- (void)viewDidBePoped:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewDidBePoped:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewDidBePoped:(_Bool)arg1"); }
+- (void)onViewDisappear { %log; NSLog(@"开始执行 - (void)onViewDisappear"); %orig; NSLog(@"结束执行 - (void)onViewDisappear"); }
+- (void)willDisshow { %log; NSLog(@"开始执行 - (void)willDisshow"); %orig; NSLog(@"结束执行 - (void)willDisshow"); }
+- (void)willAppear { %log; NSLog(@"开始执行 - (void)willAppear"); %orig; NSLog(@"结束执行 - (void)willAppear"); }
+- (void)statEnterMsgChat { %log; NSLog(@"开始执行 - (void)statEnterMsgChat"); %orig; NSLog(@"结束执行 - (void)statEnterMsgChat"); }
+- (void)didExitRoom { %log; NSLog(@"开始执行 - (void)didExitRoom"); %orig; NSLog(@"结束执行 - (void)didExitRoom"); }
+- (void)willEnterRoom { %log; NSLog(@"开始执行 - (void)willEnterRoom"); %orig; NSLog(@"结束执行 - (void)willEnterRoom"); }
+- (void)viewDidDisappear:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewDidDisappear:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewDidDisappear:(_Bool)arg1"); }
+- (void)viewWillDisappear:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewWillDisappear:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewWillDisappear:(_Bool)arg1"); }
+- (void)viewDidPush:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewDidPush:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewDidPush:(_Bool)arg1"); }
+- (void)viewWillPush:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewWillPush:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewWillPush:(_Bool)arg1"); }
+- (id)tagForCurrentPage { %log; NSLog(@"开始执行 - (id)tagForCurrentPage"); id r = %orig; NSLog(@"- (id)tagForCurrentPage 的返回值 = %@", r); NSLog(@"结束执行 - (id)tagForCurrentPage"); return r; }
+- (id)tagForActivePage { %log; NSLog(@"开始执行 - (id)tagForActivePage"); id r = %orig; NSLog(@"- (id)tagForActivePage 的返回值 = %@", r); NSLog(@"结束执行 - (id)tagForActivePage"); return r; }
+- (void)viewDidAppear:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewDidAppear:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewDidAppear:(_Bool)arg1"); }
+- (_Bool)isUseDefaultChatBkgImage { %log; NSLog(@"开始执行 - (_Bool)isUseDefaultChatBkgImage"); _Bool r = %orig; NSLog(@"- (_Bool)isUseDefaultChatBkgImage 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isUseDefaultChatBkgImage"); return r; }
+- (void)onChatBackgroundChanged:(id)arg1 { %log; NSLog(@"开始执行 - (void)onChatBackgroundChanged:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onChatBackgroundChanged:(id)arg1"); }
+- (_Bool)shouldInteractivePop { %log; NSLog(@"开始执行 - (_Bool)shouldInteractivePop"); _Bool r = %orig; NSLog(@"- (_Bool)shouldInteractivePop 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)shouldInteractivePop"); return r; }
+- (void)willDismissAndShow { %log; NSLog(@"开始执行 - (void)willDismissAndShow"); %orig; NSLog(@"结束执行 - (void)willDismissAndShow"); }
+- (void)viewWillAppear:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)viewWillAppear:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)viewWillAppear:(_Bool)arg1"); }
+- (void)trySetInputToolviewFirstResponder { %log; NSLog(@"开始执行 - (void)trySetInputToolviewFirstResponder"); %orig; NSLog(@"结束执行 - (void)trySetInputToolviewFirstResponder"); }
+- (void)fixInputToolViewKeyboard { %log; NSLog(@"开始执行 - (void)fixInputToolViewKeyboard"); %orig; NSLog(@"结束执行 - (void)fixInputToolViewKeyboard"); }
+- (void)SetVoiceEnabled:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)SetVoiceEnabled:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)SetVoiceEnabled:(_Bool)arg1"); }
+- (id)GetContact { %log; NSLog(@"开始执行 - (id)GetContact"); id r = %orig; NSLog(@"- (id)GetContact 的返回值 = %@", r); NSLog(@"结束执行 - (id)GetContact"); return r; }
+- (void)updateMessageNodeStatus:(id)arg1 { %log; NSLog(@"开始执行 - (void)updateMessageNodeStatus:(id)arg1"); %orig; NSLog(@"结束执行 - (void)updateMessageNodeStatus:(id)arg1"); }
+- (void)onDeleteMessage:(id)arg1 { %log; NSLog(@"开始执行 - (void)onDeleteMessage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onDeleteMessage:(id)arg1"); }
+- (void)actionSheet:(id)arg1 clickedButtonAtIndex:(long long)arg2 { %log; NSLog(@"开始执行 - (void)actionSheet:(id)arg1 clickedButtonAtIndex:(long long)arg2"); %orig; NSLog(@"结束执行 - (void)actionSheet:(id)arg1 clickedButtonAtIndex:(long long)arg2"); }
+- (void)handleDeleteAllMessage { %log; NSLog(@"开始执行 - (void)handleDeleteAllMessage"); %orig; NSLog(@"结束执行 - (void)handleDeleteAllMessage"); }
+- (void)deleteAllMessage { %log; NSLog(@"开始执行 - (void)deleteAllMessage"); %orig; NSLog(@"结束执行 - (void)deleteAllMessage"); }
+- (void)handleAfterDeleteAllMessage { %log; NSLog(@"开始执行 - (void)handleAfterDeleteAllMessage"); %orig; NSLog(@"结束执行 - (void)handleAfterDeleteAllMessage"); }
+- (void)onHideMultiSelectView { %log; NSLog(@"开始执行 - (void)onHideMultiSelectView"); %orig; NSLog(@"结束执行 - (void)onHideMultiSelectView"); }
+- (void)onFinishMultiSelect:(id)arg1 { %log; NSLog(@"开始执行 - (void)onFinishMultiSelect:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onFinishMultiSelect:(id)arg1"); }
+- (void)onReturn:(id)arg1 { %log; NSLog(@"开始执行 - (void)onReturn:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onReturn:(id)arg1"); }
+- (void)onEditMessage:(id)arg1 { %log; NSLog(@"开始执行 - (void)onEditMessage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onEditMessage:(id)arg1"); }
+- (void)updateDeleteCount { %log; NSLog(@"开始执行 - (void)updateDeleteCount"); %orig; NSLog(@"结束执行 - (void)updateDeleteCount"); }
+- (void)sendShortVideoMsg:(id)arg1 thumbImg:(id)arg2 statInfo:(id)arg3 editVideoAttr:(id)arg4 { %log; NSLog(@"开始执行 - (void)sendShortVideoMsg:(id)arg1 thumbImg:(id)arg2 statInfo:(id)arg3 editVideoAttr:(id)arg4"); %orig; NSLog(@"结束执行 - (void)sendShortVideoMsg:(id)arg1 thumbImg:(id)arg2 statInfo:(id)arg3 editVideoAttr:(id)arg4"); }
+- (void)sendShortVideoMsg:(id)arg1 thumbImg:(id)arg2 statInfo:(id)arg3 { %log; NSLog(@"开始执行 - (void)sendShortVideoMsg:(id)arg1 thumbImg:(id)arg2 statInfo:(id)arg3"); %orig; NSLog(@"结束执行 - (void)sendShortVideoMsg:(id)arg1 thumbImg:(id)arg2 statInfo:(id)arg3"); }
+- (void)onSightPictureTaken:(id)arg1 imageData:(id)arg2 withFrontCamera:(_Bool)arg3 editImageAttr:(id)arg4 { %log; NSLog(@"开始执行 - (void)onSightPictureTaken:(id)arg1 imageData:(id)arg2 withFrontCamera:(_Bool)arg3 editImageAttr:(id)arg4"); %orig; NSLog(@"结束执行 - (void)onSightPictureTaken:(id)arg1 imageData:(id)arg2 withFrontCamera:(_Bool)arg3 editImageAttr:(id)arg4"); }
+- (void)onShortVideoTaken:(id)arg1 thumbImg:(id)arg2 sentImmediately:(_Bool)arg3 isMuted:(_Bool)arg4 editVideoAttr:(id)arg5 { %log; NSLog(@"开始执行 - (void)onShortVideoTaken:(id)arg1 thumbImg:(id)arg2 sentImmediately:(_Bool)arg3 isMuted:(_Bool)arg4 editVideoAttr:(id)arg5"); %orig; NSLog(@"结束执行 - (void)onShortVideoTaken:(id)arg1 thumbImg:(id)arg2 sentImmediately:(_Bool)arg3 isMuted:(_Bool)arg4 editVideoAttr:(id)arg5"); }
+- (id)chatUserNameForSightStatistics { %log; NSLog(@"开始执行 - (id)chatUserNameForSightStatistics"); id r = %orig; NSLog(@"- (id)chatUserNameForSightStatistics 的返回值 = %@", r); NSLog(@"结束执行 - (id)chatUserNameForSightStatistics"); return r; }
+- (void)onTextDeleteAll { %log; NSLog(@"开始执行 - (void)onTextDeleteAll"); %orig; NSLog(@"结束执行 - (void)onTextDeleteAll"); }
+- (_Bool)hasCardPkgEntry { %log; NSLog(@"开始执行 - (_Bool)hasCardPkgEntry"); _Bool r = %orig; NSLog(@"- (_Bool)hasCardPkgEntry 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)hasCardPkgEntry"); return r; }
+- (_Bool)hasGroupPayEntry { %log; NSLog(@"开始执行 - (_Bool)hasGroupPayEntry"); _Bool r = %orig; NSLog(@"- (_Bool)hasGroupPayEntry 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)hasGroupPayEntry"); return r; }
+- (_Bool)hasRedEnvelopesEntry { %log; NSLog(@"开始执行 - (_Bool)hasRedEnvelopesEntry"); _Bool r = %orig; NSLog(@"- (_Bool)hasRedEnvelopesEntry 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)hasRedEnvelopesEntry"); return r; }
+- (_Bool)hasTransferMoneyEntry { %log; NSLog(@"开始执行 - (_Bool)hasTransferMoneyEntry"); _Bool r = %orig; NSLog(@"- (_Bool)hasTransferMoneyEntry 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)hasTransferMoneyEntry"); return r; }
+- (id)getMsgSendOpEntry { %log; NSLog(@"开始执行 - (id)getMsgSendOpEntry"); id r = %orig; NSLog(@"- (id)getMsgSendOpEntry 的返回值 = %@", r); NSLog(@"结束执行 - (id)getMsgSendOpEntry"); return r; }
+- (_Bool)hasServiceEntry { %log; NSLog(@"开始执行 - (_Bool)hasServiceEntry"); _Bool r = %orig; NSLog(@"- (_Bool)hasServiceEntry 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)hasServiceEntry"); return r; }
+- (id)getServiceAppList { %log; NSLog(@"开始执行 - (id)getServiceAppList"); id r = %orig; NSLog(@"- (id)getServiceAppList 的返回值 = %@", r); NSLog(@"结束执行 - (id)getServiceAppList"); return r; }
+- (id)getAttachmentViewServiceAppList { %log; NSLog(@"开始执行 - (id)getAttachmentViewServiceAppList"); id r = %orig; NSLog(@"- (id)getAttachmentViewServiceAppList 的返回值 = %@", r); NSLog(@"结束执行 - (id)getAttachmentViewServiceAppList"); return r; }
+- (void)openServiceApp:(id)arg1 { %log; NSLog(@"开始执行 - (void)openServiceApp:(id)arg1"); %orig; NSLog(@"结束执行 - (void)openServiceApp:(id)arg1"); }
+- (void)redEnvelopesLogic { %log; NSLog(@"开始执行 - (void)redEnvelopesLogic"); %orig; NSLog(@"结束执行 - (void)redEnvelopesLogic"); }
+- (void)transferMoneyLogic { %log; NSLog(@"开始执行 - (void)transferMoneyLogic"); %orig; NSLog(@"结束执行 - (void)transferMoneyLogic"); }
+- (void)openServiceAppListController { %log; NSLog(@"开始执行 - (void)openServiceAppListController"); %orig; NSLog(@"结束执行 - (void)openServiceAppListController"); }
+- (void)onOpenMyCardPkgViewController { %log; NSLog(@"开始执行 - (void)onOpenMyCardPkgViewController"); %orig; NSLog(@"结束执行 - (void)onOpenMyCardPkgViewController"); }
+- (void)openMyFavoritesListController { %log; NSLog(@"开始执行 - (void)openMyFavoritesListController"); %orig; NSLog(@"结束执行 - (void)openMyFavoritesListController"); }
+- (_Bool)canShowFileBrowser { %log; NSLog(@"开始执行 - (_Bool)canShowFileBrowser"); _Bool r = %orig; NSLog(@"- (_Bool)canShowFileBrowser 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)canShowFileBrowser"); return r; }
+- (_Bool)canShowSight { %log; NSLog(@"开始执行 - (_Bool)canShowSight"); _Bool r = %orig; NSLog(@"- (_Bool)canShowSight 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)canShowSight"); return r; }
+- (void)onOpenTrackRoom:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (void)onOpenTrackRoom:(unsigned int)arg1"); %orig; NSLog(@"结束执行 - (void)onOpenTrackRoom:(unsigned int)arg1"); }
+- (_Bool)shouldShowOpenTrackRoom { %log; NSLog(@"开始执行 - (_Bool)shouldShowOpenTrackRoom"); _Bool r = %orig; NSLog(@"- (_Bool)shouldShowOpenTrackRoom 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)shouldShowOpenTrackRoom"); return r; }
+- (void)onSendTextMsg:(id)arg1 { %log; NSLog(@"开始执行 - (void)onSendTextMsg:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onSendTextMsg:(id)arg1"); }
+- (void)editStreamVoiceTxtDone { %log; NSLog(@"开始执行 - (void)editStreamVoiceTxtDone"); %orig; NSLog(@"结束执行 - (void)editStreamVoiceTxtDone"); }
+- (void)editStreamVoiceTxtReturn { %log; NSLog(@"开始执行 - (void)editStreamVoiceTxtReturn"); %orig; NSLog(@"结束执行 - (void)editStreamVoiceTxtReturn"); }
+- (void)showStreamVoiceInputMaskView:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)showStreamVoiceInputMaskView:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)showStreamVoiceInputMaskView:(_Bool)arg1"); }
+- (void)streamVoiceInputFullScreenExit { %log; NSLog(@"开始执行 - (void)streamVoiceInputFullScreenExit"); %orig; NSLog(@"结束执行 - (void)streamVoiceInputFullScreenExit"); }
+- (void)streamVoiceInputFullScreenEnter { %log; NSLog(@"开始执行 - (void)streamVoiceInputFullScreenEnter"); %orig; NSLog(@"结束执行 - (void)streamVoiceInputFullScreenEnter"); }
+- (void)streamVoiceInputFullScreenWillEnter { %log; NSLog(@"开始执行 - (void)streamVoiceInputFullScreenWillEnter"); %orig; NSLog(@"结束执行 - (void)streamVoiceInputFullScreenWillEnter"); }
+- (void)streamVoiceInputBoardDidHide { %log; NSLog(@"开始执行 - (void)streamVoiceInputBoardDidHide"); %orig; NSLog(@"结束执行 - (void)streamVoiceInputBoardDidHide"); }
+- (void)streamVoiceInputBoardWillHideWithText:(id)arg1 { %log; NSLog(@"开始执行 - (void)streamVoiceInputBoardWillHideWithText:(id)arg1"); %orig; NSLog(@"结束执行 - (void)streamVoiceInputBoardWillHideWithText:(id)arg1"); }
+- (void)streamVoiceInputBoardDidShow { %log; NSLog(@"开始执行 - (void)streamVoiceInputBoardDidShow"); %orig; NSLog(@"结束执行 - (void)streamVoiceInputBoardDidShow"); }
+- (void)streamVoiceInputViewHeightChanged { %log; NSLog(@"开始执行 - (void)streamVoiceInputViewHeightChanged"); %orig; NSLog(@"结束执行 - (void)streamVoiceInputViewHeightChanged"); }
+- (void)onStreamVoiceInputButtonClick { %log; NSLog(@"开始执行 - (void)onStreamVoiceInputButtonClick"); %orig; NSLog(@"结束执行 - (void)onStreamVoiceInputButtonClick"); }
+- (void)onGroupPayButtonClick { %log; NSLog(@"开始执行 - (void)onGroupPayButtonClick"); %orig; NSLog(@"结束执行 - (void)onGroupPayButtonClick"); }
+- (void)onSelectLocation { %log; NSLog(@"开始执行 - (void)onSelectLocation"); %orig; NSLog(@"结束执行 - (void)onSelectLocation"); }
+- (void)onVideoVoipInvite { %log; NSLog(@"开始执行 - (void)onVideoVoipInvite"); %orig; NSLog(@"结束执行 - (void)onVideoVoipInvite"); }
+- (void)onVoipInvite { %log; NSLog(@"开始执行 - (void)onVoipInvite"); %orig; NSLog(@"结束执行 - (void)onVoipInvite"); }
+- (void)doJoinExistMultiTalk { %log; NSLog(@"开始执行 - (void)doJoinExistMultiTalk"); %orig; NSLog(@"结束执行 - (void)doJoinExistMultiTalk"); }
+- (void)onMultiTalkButtonClick { %log; NSLog(@"开始执行 - (void)onMultiTalkButtonClick"); %orig; NSLog(@"结束执行 - (void)onMultiTalkButtonClick"); }
+- (void)onShareCard { %log; NSLog(@"开始执行 - (void)onShareCard"); %orig; NSLog(@"结束执行 - (void)onShareCard"); }
+- (void)SendEmoticonMesssageToolView:(id)arg1 { %log; NSLog(@"开始执行 - (void)SendEmoticonMesssageToolView:(id)arg1"); %orig; NSLog(@"结束执行 - (void)SendEmoticonMesssageToolView:(id)arg1"); }
+- (void)openCameraController { %log; NSLog(@"开始执行 - (void)openCameraController"); %orig; NSLog(@"结束执行 - (void)openCameraController"); }
+- (void)openFileBrowser { %log; NSLog(@"开始执行 - (void)openFileBrowser"); %orig; NSLog(@"结束执行 - (void)openFileBrowser"); }
+- (void)openMediaBrowser { %log; NSLog(@"开始执行 - (void)openMediaBrowser"); %orig; NSLog(@"结束执行 - (void)openMediaBrowser"); }
+- (void)CancelRecording { %log; NSLog(@"开始执行 - (void)CancelRecording"); %orig; NSLog(@"结束执行 - (void)CancelRecording"); }
+- (void)StopRecording { %log; NSLog(@"开始执行 - (void)StopRecording"); %orig; NSLog(@"结束执行 - (void)StopRecording"); }
+- (_Bool)StartRecording { %log; NSLog(@"开始执行 - (_Bool)StartRecording"); _Bool r = %orig; NSLog(@"- (_Bool)StartRecording 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)StartRecording"); return r; }
+- (void)TextDidChanged:(id)arg1 selectedRange:(struct _NSRange)arg2 { %log; NSLog(@"开始执行 - (void)TextDidChanged:(id)arg1 selectedRange:(struct _NSRange)arg2"); %orig; NSLog(@"结束执行 - (void)TextDidChanged:(id)arg1 selectedRange:(struct _NSRange)arg2"); }
+- (void)willShowMenuController:(id)arg1 { %log; NSLog(@"开始执行 - (void)willShowMenuController:(id)arg1"); %orig; NSLog(@"结束执行 - (void)willShowMenuController:(id)arg1"); }
+- (_Bool)shouldHideToolViewOnKeyboardHide { %log; NSLog(@"开始执行 - (_Bool)shouldHideToolViewOnKeyboardHide"); _Bool r = %orig; NSLog(@"- (_Bool)shouldHideToolViewOnKeyboardHide 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)shouldHideToolViewOnKeyboardHide"); return r; }
+- (void)onToolViewDidMoveToWindow { %log; NSLog(@"开始执行 - (void)onToolViewDidMoveToWindow"); %orig; NSLog(@"结束执行 - (void)onToolViewDidMoveToWindow"); }
+- (void)reloadMessagesInternal { %log; NSLog(@"开始执行 - (void)reloadMessagesInternal"); %orig; NSLog(@"结束执行 - (void)reloadMessagesInternal"); }
+- (void)onPositionModeChangeTo:(int)arg1 Animated:(_Bool)arg2 { %log; NSLog(@"开始执行 - (void)onPositionModeChangeTo:(int)arg1 Animated:(_Bool)arg2"); %orig; NSLog(@"结束执行 - (void)onPositionModeChangeTo:(int)arg1 Animated:(_Bool)arg2"); }
+- (void)HasCustomInputToolViewAndDontNeedShowToolView:(_Bool *)arg1 { %log; NSLog(@"开始执行 - (void)HasCustomInputToolViewAndDontNeedShowToolView:(_Bool *)arg1"); %orig; NSLog(@"结束执行 - (void)HasCustomInputToolViewAndDontNeedShowToolView:(_Bool *)arg1"); }
+- (void)ToolViewPositionDidChanged:(_Bool)arg1 animated:(_Bool)arg2 { %log; NSLog(@"开始执行 - (void)ToolViewPositionDidChanged:(_Bool)arg1 animated:(_Bool)arg2"); %orig; NSLog(@"结束执行 - (void)ToolViewPositionDidChanged:(_Bool)arg1 animated:(_Bool)arg2"); }
+- (void)adjustTableViewRect { %log; NSLog(@"开始执行 - (void)adjustTableViewRect"); %orig; NSLog(@"结束执行 - (void)adjustTableViewRect"); }
+- (void)updateTableContentOffsetAnimated:(_Bool)arg1 OffsetDelta:(double)arg2 { %log; NSLog(@"开始执行 - (void)updateTableContentOffsetAnimated:(_Bool)arg1 OffsetDelta:(double)arg2"); %orig; NSLog(@"结束执行 - (void)updateTableContentOffsetAnimated:(_Bool)arg1 OffsetDelta:(double)arg2"); }
+- (void)scrollTableToBottomAnimated:(_Bool)arg1 init:(_Bool)arg2 { %log; NSLog(@"开始执行 - (void)scrollTableToBottomAnimated:(_Bool)arg1 init:(_Bool)arg2"); %orig; NSLog(@"结束执行 - (void)scrollTableToBottomAnimated:(_Bool)arg1 init:(_Bool)arg2"); }
+- (void)updateTableLayoutAnimateDuration:(double)arg1 Orientation:(long long)arg2 { %log; NSLog(@"开始执行 - (void)updateTableLayoutAnimateDuration:(double)arg1 Orientation:(long long)arg2"); %orig; NSLog(@"结束执行 - (void)updateTableLayoutAnimateDuration:(double)arg1 Orientation:(long long)arg2"); }
+- (void)SendEmojiArtMessageToolView:(id)arg1 { %log; NSLog(@"开始执行 - (void)SendEmojiArtMessageToolView:(id)arg1"); %orig; NSLog(@"结束执行 - (void)SendEmojiArtMessageToolView:(id)arg1"); }
+- (void)SendTextMessageToolView:(id)arg1 { %log; NSLog(@"开始执行 - (void)SendTextMessageToolView:(id)arg1"); %orig; NSLog(@"结束执行 - (void)SendTextMessageToolView:(id)arg1"); }
+- (void)AsyncSendMessage:(id)arg1 { %log; NSLog(@"开始执行 - (void)AsyncSendMessage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)AsyncSendMessage:(id)arg1"); }
+- (id)getCurrentChatName { %log; NSLog(@"开始执行 - (id)getCurrentChatName"); id r = %orig; NSLog(@"- (id)getCurrentChatName 的返回值 = %@", r); NSLog(@"结束执行 - (id)getCurrentChatName"); return r; }
+- (void)sendCaptruedImage:(id)arg1 { %log; NSLog(@"开始执行 - (void)sendCaptruedImage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)sendCaptruedImage:(id)arg1"); }
+- (void)pasteImage:(id)arg1 { %log; NSLog(@"开始执行 - (void)pasteImage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)pasteImage:(id)arg1"); }
+- (_Bool)shouldInitWXEmoticonView { %log; NSLog(@"开始执行 - (_Bool)shouldInitWXEmoticonView"); _Bool r = %orig; NSLog(@"- (_Bool)shouldInitWXEmoticonView 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)shouldInitWXEmoticonView"); return r; }
+- (void)onTouchDown { %log; NSLog(@"开始执行 - (void)onTouchDown"); %orig; NSLog(@"结束执行 - (void)onTouchDown"); }
+- (void)touchesEnded_TableView:(id)arg1 withEvent:(id)arg2 { %log; NSLog(@"开始执行 - (void)touchesEnded_TableView:(id)arg1 withEvent:(id)arg2"); %orig; NSLog(@"结束执行 - (void)touchesEnded_TableView:(id)arg1 withEvent:(id)arg2"); }
+- (void)touchesBegan_TableView:(id)arg1 withEvent:(id)arg2 { %log; NSLog(@"开始执行 - (void)touchesBegan_TableView:(id)arg1 withEvent:(id)arg2"); %orig; NSLog(@"结束执行 - (void)touchesBegan_TableView:(id)arg1 withEvent:(id)arg2"); }
+- (void)scrollViewDidScroll:(id)arg1 { %log; NSLog(@"开始执行 - (void)scrollViewDidScroll:(id)arg1"); %orig; NSLog(@"结束执行 - (void)scrollViewDidScroll:(id)arg1"); }
+- (void)scrollViewDidEndScrollingAnimation:(id)arg1 { %log; NSLog(@"开始执行 - (void)scrollViewDidEndScrollingAnimation:(id)arg1"); %orig; NSLog(@"结束执行 - (void)scrollViewDidEndScrollingAnimation:(id)arg1"); }
+- (void)onPan:(id)arg1 { %log; NSLog(@"开始执行 - (void)onPan:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onPan:(id)arg1"); }
+- (void)scrollViewDidEndDecelerating:(id)arg1 { %log; NSLog(@"开始执行 - (void)scrollViewDidEndDecelerating:(id)arg1"); %orig; NSLog(@"结束执行 - (void)scrollViewDidEndDecelerating:(id)arg1"); }
+- (void)scrollViewWillBeginDecelerating:(id)arg1 { %log; NSLog(@"开始执行 - (void)scrollViewWillBeginDecelerating:(id)arg1"); %orig; NSLog(@"结束执行 - (void)scrollViewWillBeginDecelerating:(id)arg1"); }
+- (void)scrollViewDidEndDragging:(id)arg1 willDecelerate:(_Bool)arg2 { %log; NSLog(@"开始执行 - (void)scrollViewDidEndDragging:(id)arg1 willDecelerate:(_Bool)arg2"); %orig; NSLog(@"结束执行 - (void)scrollViewDidEndDragging:(id)arg1 willDecelerate:(_Bool)arg2"); }
+- (void)scrollViewWillBeginDragging:(id)arg1 { %log; NSLog(@"开始执行 - (void)scrollViewWillBeginDragging:(id)arg1"); %orig; NSLog(@"结束执行 - (void)scrollViewWillBeginDragging:(id)arg1"); }
+- (void)tableView:(id)arg1 didEndDisplayingCell:(id)arg2 forRowAtIndexPath:(id)arg3 { %log; NSLog(@"开始执行 - (void)tableView:(id)arg1 didEndDisplayingCell:(id)arg2 forRowAtIndexPath:(id)arg3"); %orig; NSLog(@"结束执行 - (void)tableView:(id)arg1 didEndDisplayingCell:(id)arg2 forRowAtIndexPath:(id)arg3"); }
+- (void)tableView:(id)arg1 willDisplayCell:(id)arg2 forRowAtIndexPath:(id)arg3 { %log; NSLog(@"开始执行 - (void)tableView:(id)arg1 willDisplayCell:(id)arg2 forRowAtIndexPath:(id)arg3"); %orig; NSLog(@"结束执行 - (void)tableView:(id)arg1 willDisplayCell:(id)arg2 forRowAtIndexPath:(id)arg3"); }
+- (void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2 { %log; NSLog(@"开始执行 - (void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2"); %orig; NSLog(@"结束执行 - (void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2"); }
+- (_Bool)tableView:(id)arg1 shouldHighlightRowAtIndexPath:(id)arg2 { %log; NSLog(@"开始执行 - (_Bool)tableView:(id)arg1 shouldHighlightRowAtIndexPath:(id)arg2"); _Bool r = %orig; NSLog(@"- (_Bool)tableView:(id)arg1 shouldHighlightRowAtIndexPath:(id)arg2 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)tableView:(id)arg1 shouldHighlightRowAtIndexPath:(id)arg2"); return r; }
+- (long long)tableView:(id)arg1 editingStyleForRowAtIndexPath:(id)arg2 { %log; NSLog(@"开始执行 - (long long)tableView:(id)arg1 editingStyleForRowAtIndexPath:(id)arg2"); long long r = %orig; NSLog(@"- (long long)tableView:(id)arg1 editingStyleForRowAtIndexPath:(id)arg2 的返回值 = %lld", r); NSLog(@"结束执行 - (long long)tableView:(id)arg1 editingStyleForRowAtIndexPath:(id)arg2"); return r; }
+- (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2 { %log; NSLog(@"开始执行 - (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2"); id r = %orig; NSLog(@"- (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2 的返回值 = %@", r); NSLog(@"结束执行 - (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2"); return r; }
+- (id)indexPathForCellKey:(id)arg1 { %log; NSLog(@"开始执行 - (id)indexPathForCellKey:(id)arg1"); id r = %orig; NSLog(@"- (id)indexPathForCellKey:(id)arg1 的返回值 = %@", r); NSLog(@"结束执行 - (id)indexPathForCellKey:(id)arg1"); return r; }
+- (double)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2 { %log; NSLog(@"开始执行 - (double)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2"); double r = %orig; NSLog(@"- (double)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2 的返回值 = %f", r); NSLog(@"结束执行 - (double)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2"); return r; }
+- (void)didFinishedLoading:(id)arg1 { %log; NSLog(@"开始执行 - (void)didFinishedLoading:(id)arg1"); %orig; NSLog(@"结束执行 - (void)didFinishedLoading:(id)arg1"); }
+- (long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2 { %log; NSLog(@"开始执行 - (long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2"); long long r = %orig; NSLog(@"- (long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2 的返回值 = %lld", r); NSLog(@"结束执行 - (long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2"); return r; }
+- (long long)numberOfSectionsInTableView:(id)arg1 { %log; NSLog(@"开始执行 - (long long)numberOfSectionsInTableView:(id)arg1"); long long r = %orig; NSLog(@"- (long long)numberOfSectionsInTableView:(id)arg1 的返回值 = %lld", r); NSLog(@"结束执行 - (long long)numberOfSectionsInTableView:(id)arg1"); return r; }
+- (void)makeCell:(id)arg1 indexPath:(id)arg2 { %log; NSLog(@"开始执行 - (void)makeCell:(id)arg1 indexPath:(id)arg2"); %orig; NSLog(@"结束执行 - (void)makeCell:(id)arg1 indexPath:(id)arg2"); }
+- (void)viewDidLayoutSubviews { %log; NSLog(@"开始执行 - (void)viewDidLayoutSubviews"); %orig; NSLog(@"结束执行 - (void)viewDidLayoutSubviews"); }
+- (void)initView { %log; NSLog(@"开始执行 - (void)initView"); %orig; NSLog(@"结束执行 - (void)initView"); }
+- (void)adjustTableViewOffset { %log; NSLog(@"开始执行 - (void)adjustTableViewOffset"); %orig; NSLog(@"结束执行 - (void)adjustTableViewOffset"); }
+- (void)reloadBackgroundView { %log; NSLog(@"开始执行 - (void)reloadBackgroundView"); %orig; NSLog(@"结束执行 - (void)reloadBackgroundView"); }
+- (void)initSearchBar { %log; NSLog(@"开始执行 - (void)initSearchBar"); %orig; NSLog(@"结束执行 - (void)initSearchBar"); }
+- (void)resetMsgSearchHelper { %log; NSLog(@"开始执行 - (void)resetMsgSearchHelper"); %orig; NSLog(@"结束执行 - (void)resetMsgSearchHelper"); }
+- (void)initMsgSearchHelper:(int)arg1 { %log; NSLog(@"开始执行 - (void)initMsgSearchHelper:(int)arg1"); %orig; NSLog(@"结束执行 - (void)initMsgSearchHelper:(int)arg1"); }
+- (double)getSearchBarHeight { %log; NSLog(@"开始执行 - (double)getSearchBarHeight"); double r = %orig; NSLog(@"- (double)getSearchBarHeight 的返回值 = %f", r); NSLog(@"结束执行 - (double)getSearchBarHeight"); return r; }
+- (_Bool)showTrackExitAlert { %log; NSLog(@"开始执行 - (_Bool)showTrackExitAlert"); _Bool r = %orig; NSLog(@"- (_Bool)showTrackExitAlert 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)showTrackExitAlert"); return r; }
+- (void)onBackButtonClicked:(id)arg1 { %log; NSLog(@"开始执行 - (void)onBackButtonClicked:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onBackButtonClicked:(id)arg1"); }
+- (void)initNavigationView { %log; NSLog(@"开始执行 - (void)initNavigationView"); %orig; NSLog(@"结束执行 - (void)initNavigationView"); }
+- (void)updateRightBar { %log; NSLog(@"开始执行 - (void)updateRightBar"); %orig; NSLog(@"结束执行 - (void)updateRightBar"); }
+- (id)getLeftBarButton { %log; NSLog(@"开始执行 - (id)getLeftBarButton"); id r = %orig; NSLog(@"- (id)getLeftBarButton 的返回值 = %@", r); NSLog(@"结束执行 - (id)getLeftBarButton"); return r; }
+- (id)getRightBarButton { %log; NSLog(@"开始执行 - (id)getRightBarButton"); id r = %orig; NSLog(@"- (id)getRightBarButton 的返回值 = %@", r); NSLog(@"结束执行 - (id)getRightBarButton"); return r; }
+- (void)openHomePage:(id)arg1 { %log; NSLog(@"开始执行 - (void)openHomePage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)openHomePage:(id)arg1"); }
+- (void)openVoiceCall { %log; NSLog(@"开始执行 - (void)openVoiceCall"); %orig; NSLog(@"结束执行 - (void)openVoiceCall"); }
+- (void)openVideoCall { %log; NSLog(@"开始执行 - (void)openVideoCall"); %orig; NSLog(@"结束执行 - (void)openVideoCall"); }
+- (id)getVoipBarButton { %log; NSLog(@"开始执行 - (id)getVoipBarButton"); id r = %orig; NSLog(@"- (id)getVoipBarButton 的返回值 = %@", r); NSLog(@"结束执行 - (id)getVoipBarButton"); return r; }
+- (id)getHomePageBarButton { %log; NSLog(@"开始执行 - (id)getHomePageBarButton"); id r = %orig; NSLog(@"- (id)getHomePageBarButton 的返回值 = %@", r); NSLog(@"结束执行 - (id)getHomePageBarButton"); return r; }
+- (void)initMultiSelectToolView { %log; NSLog(@"开始执行 - (void)initMultiSelectToolView"); %orig; NSLog(@"结束执行 - (void)initMultiSelectToolView"); }
+- (_Bool)gestureRecognizerShouldBegin:(id)arg1 { %log; NSLog(@"开始执行 - (_Bool)gestureRecognizerShouldBegin:(id)arg1"); _Bool r = %orig; NSLog(@"- (_Bool)gestureRecognizerShouldBegin:(id)arg1 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)gestureRecognizerShouldBegin:(id)arg1"); return r; }
+- (_Bool)gestureRecognizer:(id)arg1 shouldBeRequiredToFailByGestureRecognizer:(id)arg2 { %log; NSLog(@"开始执行 - (_Bool)gestureRecognizer:(id)arg1 shouldBeRequiredToFailByGestureRecognizer:(id)arg2"); _Bool r = %orig; NSLog(@"- (_Bool)gestureRecognizer:(id)arg1 shouldBeRequiredToFailByGestureRecognizer:(id)arg2 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)gestureRecognizer:(id)arg1 shouldBeRequiredToFailByGestureRecognizer:(id)arg2"); return r; }
+- (_Bool)isViewControllerAnimated { %log; NSLog(@"开始执行 - (_Bool)isViewControllerAnimated"); _Bool r = %orig; NSLog(@"- (_Bool)isViewControllerAnimated 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isViewControllerAnimated"); return r; }
+- (_Bool)ShouldShowKeyboardAnimation { %log; NSLog(@"开始执行 - (_Bool)ShouldShowKeyboardAnimation"); _Bool r = %orig; NSLog(@"- (_Bool)ShouldShowKeyboardAnimation 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)ShouldShowKeyboardAnimation"); return r; }
+- (void)initToolView { %log; NSLog(@"开始执行 - (void)initToolView"); %orig; NSLog(@"结束执行 - (void)initToolView"); }
+- (void)initToolEmoticonView { %log; NSLog(@"开始执行 - (void)initToolEmoticonView"); %orig; NSLog(@"结束执行 - (void)initToolEmoticonView"); }
+- (void)initTableView { %log; NSLog(@"开始执行 - (void)initTableView"); %orig; NSLog(@"结束执行 - (void)initTableView"); }
+- (void)reloadTableHeaderView:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)reloadTableHeaderView:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)reloadTableHeaderView:(_Bool)arg1"); }
+- (void)startVoiceAnimatingAtNodeId:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (void)startVoiceAnimatingAtNodeId:(unsigned int)arg1"); %orig; NSLog(@"结束执行 - (void)startVoiceAnimatingAtNodeId:(unsigned int)arg1"); }
+- (void)initTableHeaderView { %log; NSLog(@"开始执行 - (void)initTableHeaderView"); %orig; NSLog(@"结束执行 - (void)initTableHeaderView"); }
+- (void)updateOpBtnState:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)updateOpBtnState:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)updateOpBtnState:(_Bool)arg1"); }
+- (void)MoreMsgBtnUpdate:(unsigned int)arg1 unReadCount:(unsigned int)arg2 { %log; NSLog(@"开始执行 - (void)MoreMsgBtnUpdate:(unsigned int)arg1 unReadCount:(unsigned int)arg2"); %orig; NSLog(@"结束执行 - (void)MoreMsgBtnUpdate:(unsigned int)arg1 unReadCount:(unsigned int)arg2"); }
+- (void)initData { %log; NSLog(@"开始执行 - (void)initData"); %orig; NSLog(@"结束执行 - (void)initData"); }
+- (void)initDeepLinkConfig { %log; NSLog(@"开始执行 - (void)initDeepLinkConfig"); %orig; NSLog(@"结束执行 - (void)initDeepLinkConfig"); }
+- (void)onLoadDownMoreMessage:(id)arg1 { %log; NSLog(@"开始执行 - (void)onLoadDownMoreMessage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onLoadDownMoreMessage:(id)arg1"); }
+- (_Bool)canBecomeFirstResponder { %log; NSLog(@"开始执行 - (_Bool)canBecomeFirstResponder"); _Bool r = %orig; NSLog(@"- (_Bool)canBecomeFirstResponder 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)canBecomeFirstResponder"); return r; }
+- (void)setTableFooterView:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)setTableFooterView:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)setTableFooterView:(_Bool)arg1"); }
+- (void)onLoadFirstUnreadMsg:(id)arg1 { %log; NSLog(@"开始执行 - (void)onLoadFirstUnreadMsg:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onLoadFirstUnreadMsg:(id)arg1"); }
+- (void)onLoadFirstScreenMsg:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)onLoadFirstScreenMsg:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)onLoadFirstScreenMsg:(_Bool)arg1"); }
+- (void)onLoadMessageFail { %log; NSLog(@"开始执行 - (void)onLoadMessageFail"); %orig; NSLog(@"结束执行 - (void)onLoadMessageFail"); }
+- (void)onLoadMoreMessage { %log; NSLog(@"开始执行 - (void)onLoadMoreMessage"); %orig; NSLog(@"结束执行 - (void)onLoadMoreMessage"); }
+- (void)initHistroyMessageNodeData { %log; NSLog(@"开始执行 - (void)initHistroyMessageNodeData"); %orig; NSLog(@"结束执行 - (void)initHistroyMessageNodeData"); }
+- (void)addMessageNode:(id)arg1 layout:(_Bool)arg2 addMoreMsg:(_Bool)arg3 { %log; NSLog(@"开始执行 - (void)addMessageNode:(id)arg1 layout:(_Bool)arg2 addMoreMsg:(_Bool)arg3"); %orig; NSLog(@"结束执行 - (void)addMessageNode:(id)arg1 layout:(_Bool)arg2 addMoreMsg:(_Bool)arg3"); }
+- (void)OnRevokeMsg:(id)arg1 MsgWrap:(id)arg2 ResultCode:(unsigned int)arg3 ResultMsg:(id)arg4 EducationMsg:(id)arg5 { %log; NSLog(@"开始执行 - (void)OnRevokeMsg:(id)arg1 MsgWrap:(id)arg2 ResultCode:(unsigned int)arg3 ResultMsg:(id)arg4 EducationMsg:(id)arg5"); %orig; NSLog(@"结束执行 - (void)OnRevokeMsg:(id)arg1 MsgWrap:(id)arg2 ResultCode:(unsigned int)arg3 ResultMsg:(id)arg4 EducationMsg:(id)arg5"); }
+- (void)OnMsgRevoked:(id)arg1 n64MsgId:(long long)arg2 { %log; NSLog(@"开始执行 - (void)OnMsgRevoked:(id)arg1 n64MsgId:(long long)arg2"); %orig; NSLog(@"结束执行 - (void)OnMsgRevoked:(id)arg1 n64MsgId:(long long)arg2"); }
+- (id)addSplitNode:(id)arg1 addMoreMsg:(_Bool)arg2 { %log; NSLog(@"开始执行 - (id)addSplitNode:(id)arg1 addMoreMsg:(_Bool)arg2"); id r = %orig; NSLog(@"- (id)addSplitNode:(id)arg1 addMoreMsg:(_Bool)arg2 的返回值 = %@", r); NSLog(@"结束执行 - (id)addSplitNode:(id)arg1 addMoreMsg:(_Bool)arg2"); return r; }
+- (void)addTimeNode:(id)arg1 layout:(_Bool)arg2 addMoreMsg:(_Bool)arg3 { %log; NSLog(@"开始执行 - (void)addTimeNode:(id)arg1 layout:(_Bool)arg2 addMoreMsg:(_Bool)arg3"); %orig; NSLog(@"结束执行 - (void)addTimeNode:(id)arg1 layout:(_Bool)arg2 addMoreMsg:(_Bool)arg3"); }
+- (id)getMessageChatContactByMessageWrap:(id)arg1 { %log; NSLog(@"开始执行 - (id)getMessageChatContactByMessageWrap:(id)arg1"); id r = %orig; NSLog(@"- (id)getMessageChatContactByMessageWrap:(id)arg1 的返回值 = %@", r); NSLog(@"结束执行 - (id)getMessageChatContactByMessageWrap:(id)arg1"); return r; }
+- (_Bool)isShowHeadImage:(id)arg1 { %log; NSLog(@"开始执行 - (_Bool)isShowHeadImage:(id)arg1"); _Bool r = %orig; NSLog(@"- (_Bool)isShowHeadImage:(id)arg1 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isShowHeadImage:(id)arg1"); return r; }
+- (void)contactInfoReturn { %log; NSLog(@"开始执行 - (void)contactInfoReturn"); %orig; NSLog(@"结束执行 - (void)contactInfoReturn"); }
+- (void)newMessageFromContactInfo:(id)arg1 { %log; NSLog(@"开始执行 - (void)newMessageFromContactInfo:(id)arg1"); %orig; NSLog(@"结束执行 - (void)newMessageFromContactInfo:(id)arg1"); }
+- (void)addToContactsFromContactInfo:(id)arg1 { %log; NSLog(@"开始执行 - (void)addToContactsFromContactInfo:(id)arg1"); %orig; NSLog(@"结束执行 - (void)addToContactsFromContactInfo:(id)arg1"); }
+- (void)scheduleOnMsg:(id)arg1 { %log; NSLog(@"开始执行 - (void)scheduleOnMsg:(id)arg1"); %orig; NSLog(@"结束执行 - (void)scheduleOnMsg:(id)arg1"); }
+- (void)showAlertWithTitle:(id)arg1 { %log; NSLog(@"开始执行 - (void)showAlertWithTitle:(id)arg1"); %orig; NSLog(@"结束执行 - (void)showAlertWithTitle:(id)arg1"); }
+- (void)onClickTextFloatPreView:(id)arg1 { %log; NSLog(@"开始执行 - (void)onClickTextFloatPreView:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onClickTextFloatPreView:(id)arg1"); }
+- (void)switchEarMode { %log; NSLog(@"开始执行 - (void)switchEarMode"); %orig; NSLog(@"结束执行 - (void)switchEarMode"); }
+- (void)jumpToUserProfile:(id)arg1 Displayname:(id)arg2 Scence:(unsigned int)arg3 fromBanner:(_Bool)arg4 { %log; NSLog(@"开始执行 - (void)jumpToUserProfile:(id)arg1 Displayname:(id)arg2 Scence:(unsigned int)arg3 fromBanner:(_Bool)arg4"); %orig; NSLog(@"结束执行 - (void)jumpToUserProfile:(id)arg1 Displayname:(id)arg2 Scence:(unsigned int)arg3 fromBanner:(_Bool)arg4"); }
+- (void)jumpToUserProfile:(id)arg1 Displayname:(id)arg2 Scence:(unsigned int)arg3 { %log; NSLog(@"开始执行 - (void)jumpToUserProfile:(id)arg1 Displayname:(id)arg2 Scence:(unsigned int)arg3"); %orig; NSLog(@"结束执行 - (void)jumpToUserProfile:(id)arg1 Displayname:(id)arg2 Scence:(unsigned int)arg3"); }
+- (void)onMassSendSendAgain:(id)arg1 { %log; NSLog(@"开始执行 - (void)onMassSendSendAgain:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onMassSendSendAgain:(id)arg1"); }
+- (void)onForwardMessageOK { %log; NSLog(@"开始执行 - (void)onForwardMessageOK"); %orig; NSLog(@"结束执行 - (void)onForwardMessageOK"); }
+- (void)onHideKeyboard { %log; NSLog(@"开始执行 - (void)onHideKeyboard"); %orig; NSLog(@"结束执行 - (void)onHideKeyboard"); }
+- (void)onScrollToBottom { %log; NSLog(@"开始执行 - (void)onScrollToBottom"); %orig; NSLog(@"结束执行 - (void)onScrollToBottom"); }
+- (void)tagLink:(id)arg1 messageWrap:(id)arg2 { %log; NSLog(@"开始执行 - (void)tagLink:(id)arg1 messageWrap:(id)arg2"); %orig; NSLog(@"结束执行 - (void)tagLink:(id)arg1 messageWrap:(id)arg2"); }
+- (void)deleteMail:(id)arg1 { %log; NSLog(@"开始执行 - (void)deleteMail:(id)arg1"); %orig; NSLog(@"结束执行 - (void)deleteMail:(id)arg1"); }
+- (void)longPressOnHeadImageForDebug:(id)arg1 { %log; NSLog(@"开始执行 - (void)longPressOnHeadImageForDebug:(id)arg1"); %orig; NSLog(@"结束执行 - (void)longPressOnHeadImageForDebug:(id)arg1"); }
+- (void)longPressOnHeadImage:(id)arg1 { %log; NSLog(@"开始执行 - (void)longPressOnHeadImage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)longPressOnHeadImage:(id)arg1"); }
+- (_Bool)canLongPressOnHeadImage:(id)arg1 { %log; NSLog(@"开始执行 - (_Bool)canLongPressOnHeadImage:(id)arg1"); _Bool r = %orig; NSLog(@"- (_Bool)canLongPressOnHeadImage:(id)arg1 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)canLongPressOnHeadImage:(id)arg1"); return r; }
+- (_Bool)isMsgSelected:(id)arg1 { %log; NSLog(@"开始执行 - (_Bool)isMsgSelected:(id)arg1"); _Bool r = %orig; NSLog(@"- (_Bool)isMsgSelected:(id)arg1 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isMsgSelected:(id)arg1"); return r; }
+- (void)deleteNode:(id)arg1 { %log; NSLog(@"开始执行 - (void)deleteNode:(id)arg1"); %orig; NSLog(@"结束执行 - (void)deleteNode:(id)arg1"); }
+- (_Bool)isMsgCanRevoke:(id)arg1 { %log; NSLog(@"开始执行 - (_Bool)isMsgCanRevoke:(id)arg1"); _Bool r = %orig; NSLog(@"- (_Bool)isMsgCanRevoke:(id)arg1 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isMsgCanRevoke:(id)arg1"); return r; }
+- (_Bool)isMsgLastSend:(id)arg1 { %log; NSLog(@"开始执行 - (_Bool)isMsgLastSend:(id)arg1"); _Bool r = %orig; NSLog(@"- (_Bool)isMsgLastSend:(id)arg1 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isMsgLastSend:(id)arg1"); return r; }
+- (id)getLastSentMsg { %log; NSLog(@"开始执行 - (id)getLastSentMsg"); id r = %orig; NSLog(@"- (id)getLastSentMsg 的返回值 = %@", r); NSLog(@"结束执行 - (id)getLastSentMsg"); return r; }
+- (_Bool)isChatStatusNotifyOpen { %log; NSLog(@"开始执行 - (_Bool)isChatStatusNotifyOpen"); _Bool r = %orig; NSLog(@"- (_Bool)isChatStatusNotifyOpen 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isChatStatusNotifyOpen"); return r; }
+- (void)shareMsgToOpenSDKByNodeView:(id)arg1 { %log; NSLog(@"开始执行 - (void)shareMsgToOpenSDKByNodeView:(id)arg1"); %orig; NSLog(@"结束执行 - (void)shareMsgToOpenSDKByNodeView:(id)arg1"); }
+- (void)onClickPlayMusicBtn:(id)arg1 isPlay:(_Bool)arg2 { %log; NSLog(@"开始执行 - (void)onClickPlayMusicBtn:(id)arg1 isPlay:(_Bool)arg2"); %orig; NSLog(@"结束执行 - (void)onClickPlayMusicBtn:(id)arg1 isPlay:(_Bool)arg2"); }
+- (void)onClickFavMenu:(id)arg1 { %log; NSLog(@"开始执行 - (void)onClickFavMenu:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onClickFavMenu:(id)arg1"); }
+- (void)onClickVoiceTranslate:(id)arg1 { %log; NSLog(@"开始执行 - (void)onClickVoiceTranslate:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onClickVoiceTranslate:(id)arg1"); }
+- (void)onClickTranslateMsg:(id)arg1 translateInfo:(id)arg2 { %log; NSLog(@"开始执行 - (void)onClickTranslateMsg:(id)arg1 translateInfo:(id)arg2"); %orig; NSLog(@"结束执行 - (void)onClickTranslateMsg:(id)arg1 translateInfo:(id)arg2"); }
+- (void)revokeMsgByNodeView:(id)arg1 { %log; NSLog(@"开始执行 - (void)revokeMsgByNodeView:(id)arg1"); %orig; NSLog(@"结束执行 - (void)revokeMsgByNodeView:(id)arg1"); }
+- (void)StartDownloadVideo:(id)arg1 DownloadMode:(unsigned long long)arg2 { %log; NSLog(@"开始执行 - (void)StartDownloadVideo:(id)arg1 DownloadMode:(unsigned long long)arg2"); %orig; NSLog(@"结束执行 - (void)StartDownloadVideo:(id)arg1 DownloadMode:(unsigned long long)arg2"); }
+- (void)StartDownloadVideo:(id)arg1 { %log; NSLog(@"开始执行 - (void)StartDownloadVideo:(id)arg1"); %orig; NSLog(@"结束执行 - (void)StartDownloadVideo:(id)arg1"); }
+- (void)StartUploadVideo:(id)arg1 { %log; NSLog(@"开始执行 - (void)StartUploadVideo:(id)arg1"); %orig; NSLog(@"结束执行 - (void)StartUploadVideo:(id)arg1"); }
+- (void)StopDownloadVideo:(id)arg1 { %log; NSLog(@"开始执行 - (void)StopDownloadVideo:(id)arg1"); %orig; NSLog(@"结束执行 - (void)StopDownloadVideo:(id)arg1"); }
+- (void)StopUploadVideo:(id)arg1 { %log; NSLog(@"开始执行 - (void)StopUploadVideo:(id)arg1"); %orig; NSLog(@"结束执行 - (void)StopUploadVideo:(id)arg1"); }
+- (struct CGRect)getInputToolViewFrame { %log; NSLog(@"开始执行 - (struct CGRect)getInputToolViewFrame"); struct CGRect r = %orig; NSLog(@"结束执行 - (struct CGRect)getInputToolViewFrame"); return r; }
+- (struct CGRect)getNodeRectInScreen:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (struct CGRect)getNodeRectInScreen:(unsigned int)arg1"); struct CGRect r = %orig; NSLog(@"结束执行 - (struct CGRect)getNodeRectInScreen:(unsigned int)arg1"); return r; }
+- (id)GetMessageNodeDataArray { %log; NSLog(@"开始执行 - (id)GetMessageNodeDataArray"); id r = %orig; NSLog(@"- (id)GetMessageNodeDataArray 的返回值 = %@", r); NSLog(@"结束执行 - (id)GetMessageNodeDataArray"); return r; }
+- (id)GetMessagesWrapArray { %log; NSLog(@"开始执行 - (id)GetMessagesWrapArray"); id r = %orig; NSLog(@"- (id)GetMessagesWrapArray 的返回值 = %@", r); NSLog(@"结束执行 - (id)GetMessagesWrapArray"); return r; }
+- (void)ShowVolumeTips { %log; NSLog(@"开始执行 - (void)ShowVolumeTips"); %orig; NSLog(@"结束执行 - (void)ShowVolumeTips"); }
+- (void)ShowEarTips { %log; NSLog(@"开始执行 - (void)ShowEarTips"); %orig; NSLog(@"结束执行 - (void)ShowEarTips"); }
+- (void)ShowEarBackTips { %log; NSLog(@"开始执行 - (void)ShowEarBackTips"); %orig; NSLog(@"结束执行 - (void)ShowEarBackTips"); }
+- (void)StopPlayingNodeView:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (void)StopPlayingNodeView:(unsigned int)arg1"); %orig; NSLog(@"结束执行 - (void)StopPlayingNodeView:(unsigned int)arg1"); }
+- (void)StartPlayingNodeView:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (void)StartPlayingNodeView:(unsigned int)arg1"); %orig; NSLog(@"结束执行 - (void)StartPlayingNodeView:(unsigned int)arg1"); }
+- (void)EndPlaying:(id)arg1 { %log; NSLog(@"开始执行 - (void)EndPlaying:(id)arg1"); %orig; NSLog(@"结束执行 - (void)EndPlaying:(id)arg1"); }
+- (void)OnEndPlaying:(id)arg1 { %log; NSLog(@"开始执行 - (void)OnEndPlaying:(id)arg1"); %orig; NSLog(@"结束执行 - (void)OnEndPlaying:(id)arg1"); }
+- (void)showPlayVoiceTipsIfNeed { %log; NSLog(@"开始执行 - (void)showPlayVoiceTipsIfNeed"); %orig; NSLog(@"结束执行 - (void)showPlayVoiceTipsIfNeed"); }
+- (void)BeginPlaying:(id)arg1 FromTouch:(_Bool)arg2 { %log; NSLog(@"开始执行 - (void)BeginPlaying:(id)arg1 FromTouch:(_Bool)arg2"); %orig; NSLog(@"结束执行 - (void)BeginPlaying:(id)arg1 FromTouch:(_Bool)arg2"); }
+- (void)SetMsgPlayed:(id)arg1 { %log; NSLog(@"开始执行 - (void)SetMsgPlayed:(id)arg1"); %orig; NSLog(@"结束执行 - (void)SetMsgPlayed:(id)arg1"); }
+- (void)setSecurityTipShow:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)setSecurityTipShow:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)setSecurityTipShow:(_Bool)arg1"); }
+- (void)setAddFriendTipShow:(_Bool)arg1 contact:(id)arg2 { %log; NSLog(@"开始执行 - (void)setAddFriendTipShow:(_Bool)arg1 contact:(id)arg2"); %orig; NSLog(@"结束执行 - (void)setAddFriendTipShow:(_Bool)arg1 contact:(id)arg2"); }
+- (void)showAddFriendTip:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)showAddFriendTip:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)showAddFriendTip:(_Bool)arg1"); }
+- (double)getSecurityBannerTipHeight { %log; NSLog(@"开始执行 - (double)getSecurityBannerTipHeight"); double r = %orig; NSLog(@"- (double)getSecurityBannerTipHeight 的返回值 = %f", r); NSLog(@"结束执行 - (double)getSecurityBannerTipHeight"); return r; }
+- (double)getAddFriendTipHeight { %log; NSLog(@"开始执行 - (double)getAddFriendTipHeight"); double r = %orig; NSLog(@"- (double)getAddFriendTipHeight 的返回值 = %f", r); NSLog(@"结束执行 - (double)getAddFriendTipHeight"); return r; }
+- (double)getTipsHeight { %log; NSLog(@"开始执行 - (double)getTipsHeight"); double r = %orig; NSLog(@"- (double)getTipsHeight 的返回值 = %f", r); NSLog(@"结束执行 - (double)getTipsHeight"); return r; }
+- (void)checkShowSecurityBannerTip:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)checkShowSecurityBannerTip:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)checkShowSecurityBannerTip:(_Bool)arg1"); }
+- (void)checkShowRecommandFriendTip:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)checkShowRecommandFriendTip:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)checkShowRecommandFriendTip:(_Bool)arg1"); }
+- (void)checkTips:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)checkTips:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)checkTips:(_Bool)arg1"); }
+- (void)onReceiveSecurityBannerMsg:(id)arg1 withData:(id)arg2 { %log; NSLog(@"开始执行 - (void)onReceiveSecurityBannerMsg:(id)arg1 withData:(id)arg2"); %orig; NSLog(@"结束执行 - (void)onReceiveSecurityBannerMsg:(id)arg1 withData:(id)arg2"); }
+- (void)onShareVideoToTimeline:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)onShareVideoToTimeline:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)onShareVideoToTimeline:(_Bool)arg1"); }
+- (void)onShareVideoToFriend:(id)arg1 { %log; NSLog(@"开始执行 - (void)onShareVideoToFriend:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onShareVideoToFriend:(id)arg1"); }
+- (void)onClickFavVideoMenu { %log; NSLog(@"开始执行 - (void)onClickFavVideoMenu"); %orig; NSLog(@"结束执行 - (void)onClickFavVideoMenu"); }
+- (void)onClosePlayerForViewDetail:(id)arg1 { %log; NSLog(@"开始执行 - (void)onClosePlayerForViewDetail:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onClosePlayerForViewDetail:(id)arg1"); }
+- (void)jumpToDetail:(id)arg1 { %log; NSLog(@"开始执行 - (void)jumpToDetail:(id)arg1"); %orig; NSLog(@"结束执行 - (void)jumpToDetail:(id)arg1"); }
+- (void)onClosePlayer { %log; NSLog(@"开始执行 - (void)onClosePlayer"); %orig; NSLog(@"结束执行 - (void)onClosePlayer"); }
+- (_Bool)stopAtLastVideoFrameWhenPlayEnd { %log; NSLog(@"开始执行 - (_Bool)stopAtLastVideoFrameWhenPlayEnd"); _Bool r = %orig; NSLog(@"- (_Bool)stopAtLastVideoFrameWhenPlayEnd 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)stopAtLastVideoFrameWhenPlayEnd"); return r; }
+- (void)JumpToViewStreamVideo:(id)arg1 { %log; NSLog(@"开始执行 - (void)JumpToViewStreamVideo:(id)arg1"); %orig; NSLog(@"结束执行 - (void)JumpToViewStreamVideo:(id)arg1"); }
+- (void)onMultiSelectContactReturn:(id)arg1 { %log; NSLog(@"开始执行 - (void)onMultiSelectContactReturn:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onMultiSelectContactReturn:(id)arg1"); }
+- (id)contactShareMsgFromUser:(id)arg1 toUser:(id)arg2 sharedContact:(id)arg3 { %log; NSLog(@"开始执行 - (id)contactShareMsgFromUser:(id)arg1 toUser:(id)arg2 sharedContact:(id)arg3"); id r = %orig; NSLog(@"- (id)contactShareMsgFromUser:(id)arg1 toUser:(id)arg2 sharedContact:(id)arg3 的返回值 = %@", r); NSLog(@"结束执行 - (id)contactShareMsgFromUser:(id)arg1 toUser:(id)arg2 sharedContact:(id)arg3"); return r; }
+- (void)clickNewAASysMsg:(id)arg1 withMsgLocalID:(unsigned int)arg2 { %log; NSLog(@"开始执行 - (void)clickNewAASysMsg:(id)arg1 withMsgLocalID:(unsigned int)arg2"); %orig; NSLog(@"结束执行 - (void)clickNewAASysMsg:(id)arg1 withMsgLocalID:(unsigned int)arg2"); }
+- (void)clickEditRevokeContentSysMsg:(id)arg1 { %log; NSLog(@"开始执行 - (void)clickEditRevokeContentSysMsg:(id)arg1"); %orig; NSLog(@"结束执行 - (void)clickEditRevokeContentSysMsg:(id)arg1"); }
+- (void)hadShowNewXmlSystemMessage:(id)arg1 { %log; NSLog(@"开始执行 - (void)hadShowNewXmlSystemMessage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)hadShowNewXmlSystemMessage:(id)arg1"); }
+- (void)clickLinkToDealWithSysXml:(id)arg1 fromScene:(id)arg2 { %log; NSLog(@"开始执行 - (void)clickLinkToDealWithSysXml:(id)arg1 fromScene:(id)arg2"); %orig; NSLog(@"结束执行 - (void)clickLinkToDealWithSysXml:(id)arg1 fromScene:(id)arg2"); }
+- (void)clickWeAppReceiveSessionMsg { %log; NSLog(@"开始执行 - (void)clickWeAppReceiveSessionMsg"); %orig; NSLog(@"结束执行 - (void)clickWeAppReceiveSessionMsg"); }
+- (void)clickReceiveBrandMsg { %log; NSLog(@"开始执行 - (void)clickReceiveBrandMsg"); %orig; NSLog(@"结束执行 - (void)clickReceiveBrandMsg"); }
+- (void)clickShieldBrandMsg { %log; NSLog(@"开始执行 - (void)clickShieldBrandMsg"); %orig; NSLog(@"结束执行 - (void)clickShieldBrandMsg"); }
+- (void)clickLinkToExpose { %log; NSLog(@"开始执行 - (void)clickLinkToExpose"); %orig; NSLog(@"结束执行 - (void)clickLinkToExpose"); }
+- (void)onExposeTemplateMsg:(id)arg1 { %log; NSLog(@"开始执行 - (void)onExposeTemplateMsg:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onExposeTemplateMsg:(id)arg1"); }
+- (void)onPerformIconAction:(id)arg1 { %log; NSLog(@"开始执行 - (void)onPerformIconAction:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onPerformIconAction:(id)arg1"); }
+- (void)onPerformExposeAction:(id)arg1 { %log; NSLog(@"开始执行 - (void)onPerformExposeAction:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onPerformExposeAction:(id)arg1"); }
+- (void)showExposeViewController { %log; NSLog(@"开始执行 - (void)showExposeViewController"); %orig; NSLog(@"结束执行 - (void)showExposeViewController"); }
+- (void)onPerformAction:(id)arg1 { %log; NSLog(@"开始执行 - (void)onPerformAction:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onPerformAction:(id)arg1"); }
+- (void)onTipsViewClose:(id)arg1 { %log; NSLog(@"开始执行 - (void)onTipsViewClose:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onTipsViewClose:(id)arg1"); }
+- (void)onTipsViewClick:(id)arg1 { %log; NSLog(@"开始执行 - (void)onTipsViewClick:(id)arg1"); %orig; NSLog(@"结束执行 - (void)onTipsViewClick:(id)arg1"); }
+- (void)showEarModeTips { %log; NSLog(@"开始执行 - (void)showEarModeTips"); %orig; NSLog(@"结束执行 - (void)showEarModeTips"); }
+- (void)readerViewClickedWithMsg:(id)arg1 { %log; NSLog(@"开始执行 - (void)readerViewClickedWithMsg:(id)arg1"); %orig; NSLog(@"结束执行 - (void)readerViewClickedWithMsg:(id)arg1"); }
+- (void)headerImageClickedWithMsg:(id)arg1 { %log; NSLog(@"开始执行 - (void)headerImageClickedWithMsg:(id)arg1"); %orig; NSLog(@"结束执行 - (void)headerImageClickedWithMsg:(id)arg1"); }
+- (void)headerImageClicked:(id)arg1 { %log; NSLog(@"开始执行 - (void)headerImageClicked:(id)arg1"); %orig; NSLog(@"结束执行 - (void)headerImageClicked:(id)arg1"); }
+- (void)PlayVideo:(id)arg1 soundable:(_Bool)arg2 { %log; NSLog(@"开始执行 - (void)PlayVideo:(id)arg1 soundable:(_Bool)arg2"); %orig; NSLog(@"结束执行 - (void)PlayVideo:(id)arg1 soundable:(_Bool)arg2"); }
+- (void)tapAppNodeView:(id)arg1 { %log; NSLog(@"开始执行 - (void)tapAppNodeView:(id)arg1"); %orig; NSLog(@"结束执行 - (void)tapAppNodeView:(id)arg1"); }
+- (void)tapFriendCard_NodeView:(id)arg1 WithContact:(id)arg2 WithMsg:(id)arg3 { %log; NSLog(@"开始执行 - (void)tapFriendCard_NodeView:(id)arg1 WithContact:(id)arg2 WithMsg:(id)arg3"); %orig; NSLog(@"结束执行 - (void)tapFriendCard_NodeView:(id)arg1 WithContact:(id)arg2 WithMsg:(id)arg3"); }
+- (void)tapPushMail_NodeView:(id)arg1 withPushMailWrap:(id)arg2 { %log; NSLog(@"开始执行 - (void)tapPushMail_NodeView:(id)arg1 withPushMailWrap:(id)arg2"); %orig; NSLog(@"结束执行 - (void)tapPushMail_NodeView:(id)arg1 withPushMailWrap:(id)arg2"); }
+- (void)tapImage_NodeView:(id)arg1 needEditImage:(_Bool)arg2 { %log; NSLog(@"开始执行 - (void)tapImage_NodeView:(id)arg1 needEditImage:(_Bool)arg2"); %orig; NSLog(@"结束执行 - (void)tapImage_NodeView:(id)arg1 needEditImage:(_Bool)arg2"); }
+- (void)tapImage_NodeView:(id)arg1 { %log; NSLog(@"开始执行 - (void)tapImage_NodeView:(id)arg1"); %orig; NSLog(@"结束执行 - (void)tapImage_NodeView:(id)arg1"); }
+- (void)tapLocation_NodeView:(id)arg1 { %log; NSLog(@"开始执行 - (void)tapLocation_NodeView:(id)arg1"); %orig; NSLog(@"结束执行 - (void)tapLocation_NodeView:(id)arg1"); }
+- (void)tapVideoStatus_NodeView:(id)arg1 DownloadMode:(unsigned long long)arg2 { %log; NSLog(@"开始执行 - (void)tapVideoStatus_NodeView:(id)arg1 DownloadMode:(unsigned long long)arg2"); %orig; NSLog(@"结束执行 - (void)tapVideoStatus_NodeView:(id)arg1 DownloadMode:(unsigned long long)arg2"); }
+- (void)tapVideoStatus_NodeView:(id)arg1 { %log; NSLog(@"开始执行 - (void)tapVideoStatus_NodeView:(id)arg1"); %orig; NSLog(@"结束执行 - (void)tapVideoStatus_NodeView:(id)arg1"); }
+- (void)tapStatus_NodeView:(id)arg1 { %log; NSLog(@"开始执行 - (void)tapStatus_NodeView:(id)arg1"); %orig; NSLog(@"结束执行 - (void)tapStatus_NodeView:(id)arg1"); }
+- (void)hasTapReaderNodeView { %log; NSLog(@"开始执行 - (void)hasTapReaderNodeView"); %orig; NSLog(@"结束执行 - (void)hasTapReaderNodeView"); }
+- (id)getViewController { %log; NSLog(@"开始执行 - (id)getViewController"); id r = %orig; NSLog(@"- (id)getViewController 的返回值 = %@", r); NSLog(@"结束执行 - (id)getViewController"); return r; }
+- (void)updateTypingTitle:(id)arg1 { %log; NSLog(@"开始执行 - (void)updateTypingTitle:(id)arg1"); %orig; NSLog(@"结束执行 - (void)updateTypingTitle:(id)arg1"); }
+- (void)PreviewImage:(id)arg1 soundable:(_Bool)arg2 snapshotView:(id)arg3 needEdit:(_Bool)arg4 { %log; NSLog(@"开始执行 - (void)PreviewImage:(id)arg1 soundable:(_Bool)arg2 snapshotView:(id)arg3 needEdit:(_Bool)arg4"); %orig; NSLog(@"结束执行 - (void)PreviewImage:(id)arg1 soundable:(_Bool)arg2 snapshotView:(id)arg3 needEdit:(_Bool)arg4"); }
+- (void)PreviewImage:(id)arg1 soundable:(_Bool)arg2 snapshotView:(id)arg3 { %log; NSLog(@"开始执行 - (void)PreviewImage:(id)arg1 soundable:(_Bool)arg2 snapshotView:(id)arg3"); %orig; NSLog(@"结束执行 - (void)PreviewImage:(id)arg1 soundable:(_Bool)arg2 snapshotView:(id)arg3"); }
+- (void)PreviewImage:(id)arg1 needEdit:(_Bool)arg2 { %log; NSLog(@"开始执行 - (void)PreviewImage:(id)arg1 needEdit:(_Bool)arg2"); %orig; NSLog(@"结束执行 - (void)PreviewImage:(id)arg1 needEdit:(_Bool)arg2"); }
+- (void)PreviewImage:(id)arg1 { %log; NSLog(@"开始执行 - (void)PreviewImage:(id)arg1"); %orig; NSLog(@"结束执行 - (void)PreviewImage:(id)arg1"); }
+- (id)chatContactForMessageWrap:(id)arg1 { %log; NSLog(@"开始执行 - (id)chatContactForMessageWrap:(id)arg1"); id r = %orig; NSLog(@"- (id)chatContactForMessageWrap:(id)arg1 的返回值 = %@", r); NSLog(@"结束执行 - (id)chatContactForMessageWrap:(id)arg1"); return r; }
+- (void)unHighLightSelectSearchCell { %log; NSLog(@"开始执行 - (void)unHighLightSelectSearchCell"); %orig; NSLog(@"结束执行 - (void)unHighLightSelectSearchCell"); }
+- (void)highLightSelectSearchCell { %log; NSLog(@"开始执行 - (void)highLightSelectSearchCell"); %orig; NSLog(@"结束执行 - (void)highLightSelectSearchCell"); }
+- (void)unHighLightSearchKeyWordInSelectCell { %log; NSLog(@"开始执行 - (void)unHighLightSearchKeyWordInSelectCell"); %orig; NSLog(@"结束执行 - (void)unHighLightSearchKeyWordInSelectCell"); }
+- (void)highLightSearchKeyWordInSelectCell { %log; NSLog(@"开始执行 - (void)highLightSearchKeyWordInSelectCell"); %orig; NSLog(@"结束执行 - (void)highLightSearchKeyWordInSelectCell"); }
+- (void)didSelectSearchResultForMessageWrap:(id)arg1 indexPath:(id)arg2 { %log; NSLog(@"开始执行 - (void)didSelectSearchResultForMessageWrap:(id)arg1 indexPath:(id)arg2"); %orig; NSLog(@"结束执行 - (void)didSelectSearchResultForMessageWrap:(id)arg1 indexPath:(id)arg2"); }
+- (void)didSelectSearchResultForMessageWrap:(id)arg1 { %log; NSLog(@"开始执行 - (void)didSelectSearchResultForMessageWrap:(id)arg1"); %orig; NSLog(@"结束执行 - (void)didSelectSearchResultForMessageWrap:(id)arg1"); }
+- (void)locateToMsg:(id)arg1 { %log; NSLog(@"开始执行 - (void)locateToMsg:(id)arg1"); %orig; NSLog(@"结束执行 - (void)locateToMsg:(id)arg1"); }
+- (id)QueryMsgText:(id)arg1 FromID:(unsigned int)arg2 FromCreateTime:(unsigned int)arg3 Limit:(int)arg4 LeftCount:(unsigned int *)arg5 { %log; NSLog(@"开始执行 - (id)QueryMsgText:(id)arg1 FromID:(unsigned int)arg2 FromCreateTime:(unsigned int)arg3 Limit:(int)arg4 LeftCount:(unsigned int *)arg5"); id r = %orig; NSLog(@"- (id)QueryMsgText:(id)arg1 FromID:(unsigned int)arg2 FromCreateTime:(unsigned int)arg3 Limit:(int)arg4 LeftCount:(unsigned int *)arg5 的返回值 = %@", r); NSLog(@"结束执行 - (id)QueryMsgText:(id)arg1 FromID:(unsigned int)arg2 FromCreateTime:(unsigned int)arg3 Limit:(int)arg4 LeftCount:(unsigned int *)arg5"); return r; }
+- (id)getChatContact { %log; NSLog(@"开始执行 - (id)getChatContact"); id r = %orig; NSLog(@"- (id)getChatContact 的返回值 = %@", r); NSLog(@"结束执行 - (id)getChatContact"); return r; }
+- (void)msgSearchBarSearchByIndex:(long long)arg1 { %log; NSLog(@"开始执行 - (void)msgSearchBarSearchByIndex:(long long)arg1"); %orig; NSLog(@"结束执行 - (void)msgSearchBarSearchByIndex:(long long)arg1"); }
+- (void)msgSearchBarSearchByVideo { %log; NSLog(@"开始执行 - (void)msgSearchBarSearchByVideo"); %orig; NSLog(@"结束执行 - (void)msgSearchBarSearchByVideo"); }
+- (void)msgSearchBarSearchByPicture { %log; NSLog(@"开始执行 - (void)msgSearchBarSearchByPicture"); %orig; NSLog(@"结束执行 - (void)msgSearchBarSearchByPicture"); }
+- (void)msgSearchBarSearchByTime { %log; NSLog(@"开始执行 - (void)msgSearchBarSearchByTime"); %orig; NSLog(@"结束执行 - (void)msgSearchBarSearchByTime"); }
+- (void)msgSearchBarSearchByName { %log; NSLog(@"开始执行 - (void)msgSearchBarSearchByName"); %orig; NSLog(@"结束执行 - (void)msgSearchBarSearchByName"); }
+- (void)msgSearchBarDoSearch { %log; NSLog(@"开始执行 - (void)msgSearchBarDoSearch"); %orig; NSLog(@"结束执行 - (void)msgSearchBarDoSearch"); }
+- (void)msgSearchBarCancel { %log; NSLog(@"开始执行 - (void)msgSearchBarCancel"); %orig; NSLog(@"结束执行 - (void)msgSearchBarCancel"); }
+- (id)getParentTableView { %log; NSLog(@"开始执行 - (id)getParentTableView"); id r = %orig; NSLog(@"- (id)getParentTableView 的返回值 = %@", r); NSLog(@"结束执行 - (id)getParentTableView"); return r; }
+- (void)deleteNode:(id)arg1 withDB:(_Bool)arg2 animated:(_Bool)arg3 { %log; NSLog(@"开始执行 - (void)deleteNode:(id)arg1 withDB:(_Bool)arg2 animated:(_Bool)arg3"); %orig; NSLog(@"结束执行 - (void)deleteNode:(id)arg1 withDB:(_Bool)arg2 animated:(_Bool)arg3"); }
+- (void)openChatInfo:(id)arg1 { %log; NSLog(@"开始执行 - (void)openChatInfo:(id)arg1"); %orig; NSLog(@"结束执行 - (void)openChatInfo:(id)arg1"); }
+- (void)tryScrollToBottomAnimated:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)tryScrollToBottomAnimated:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)tryScrollToBottomAnimated:(_Bool)arg1"); }
+- (_Bool)isScrollToBottom { %log; NSLog(@"开始执行 - (_Bool)isScrollToBottom"); _Bool r = %orig; NSLog(@"- (_Bool)isScrollToBottom 的返回值 = %d", r); NSLog(@"结束执行 - (_Bool)isScrollToBottom"); return r; }
+- (void)ScrollToTopAnimated:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)ScrollToTopAnimated:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)ScrollToTopAnimated:(_Bool)arg1"); }
+- (void)ScrollToBottomAnimated:(_Bool)arg1 { %log; NSLog(@"开始执行 - (void)ScrollToBottomAnimated:(_Bool)arg1"); %orig; NSLog(@"结束执行 - (void)ScrollToBottomAnimated:(_Bool)arg1"); }
+- (void)ScrollToBottomAnimatedAndLoadMoreNode { %log; NSLog(@"开始执行 - (void)ScrollToBottomAnimatedAndLoadMoreNode"); %orig; NSLog(@"结束执行 - (void)ScrollToBottomAnimatedAndLoadMoreNode"); }
+- (void)updateTitleView:(id)arg1 { %log; NSLog(@"开始执行 - (void)updateTitleView:(id)arg1"); %orig; NSLog(@"结束执行 - (void)updateTitleView:(id)arg1"); }
+- (void)viewDidTransitionToNewSize { %log; NSLog(@"开始执行 - (void)viewDidTransitionToNewSize"); %orig; NSLog(@"结束执行 - (void)viewDidTransitionToNewSize"); }
+- (id)getTitleLableViewWithMaxWidth:(double)arg1 title:(id)arg2 { %log; NSLog(@"开始执行 - (id)getTitleLableViewWithMaxWidth:(double)arg1 title:(id)arg2"); id r = %orig; NSLog(@"- (id)getTitleLableViewWithMaxWidth:(double)arg1 title:(id)arg2 的返回值 = %@", r); NSLog(@"结束执行 - (id)getTitleLableViewWithMaxWidth:(double)arg1 title:(id)arg2"); return r; }
+- (id)getTitleLableViewWithMaxWidth:(double)arg1 title:(id)arg2 fontSize:(double)arg3 { %log; NSLog(@"开始执行 - (id)getTitleLableViewWithMaxWidth:(double)arg1 title:(id)arg2 fontSize:(double)arg3"); id r = %orig; NSLog(@"- (id)getTitleLableViewWithMaxWidth:(double)arg1 title:(id)arg2 fontSize:(double)arg3 的返回值 = %@", r); NSLog(@"结束执行 - (id)getTitleLableViewWithMaxWidth:(double)arg1 title:(id)arg2 fontSize:(double)arg3"); return r; }
+- (void)locateTableViewWithLocalID:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (void)locateTableViewWithLocalID:(unsigned int)arg1"); %orig; NSLog(@"结束执行 - (void)locateTableViewWithLocalID:(unsigned int)arg1"); }
+- (unsigned long long)getMsgContentSizeHeight:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (unsigned long long)getMsgContentSizeHeight:(unsigned int)arg1"); unsigned long long r = %orig; NSLog(@"- (unsigned long long)getMsgContentSizeHeight:(unsigned int)arg1 的返回值 = %llu", r); NSLog(@"结束执行 - (unsigned long long)getMsgContentSizeHeight:(unsigned int)arg1"); return r; }
+- (unsigned long long)getCurContentSizeHeight { %log; NSLog(@"开始执行 - (unsigned long long)getCurContentSizeHeight"); unsigned long long r = %orig; NSLog(@"- (unsigned long long)getCurContentSizeHeight 的返回值 = %llu", r); NSLog(@"结束执行 - (unsigned long long)getCurContentSizeHeight"); return r; }
+- (unsigned long long)getLastNodePreContentSizeHeight { %log; NSLog(@"开始执行 - (unsigned long long)getLastNodePreContentSizeHeight"); unsigned long long r = %orig; NSLog(@"- (unsigned long long)getLastNodePreContentSizeHeight 的返回值 = %llu", r); NSLog(@"结束执行 - (unsigned long long)getLastNodePreContentSizeHeight"); return r; }
+- (id)findNodeViewByLocalId:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (id)findNodeViewByLocalId:(unsigned int)arg1"); id r = %orig; NSLog(@"- (id)findNodeViewByLocalId:(unsigned int)arg1 的返回值 = %@", r); NSLog(@"结束执行 - (id)findNodeViewByLocalId:(unsigned int)arg1"); return r; }
+- (id)findNodeDataByLocalId:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (id)findNodeDataByLocalId:(unsigned int)arg1"); id r = %orig; NSLog(@"- (id)findNodeDataByLocalId:(unsigned int)arg1 的返回值 = %@", r); NSLog(@"结束执行 - (id)findNodeDataByLocalId:(unsigned int)arg1"); return r; }
+- (void)reloadNodeWithMessageWrap:(id)arg1 { %log; NSLog(@"开始执行 - (void)reloadNodeWithMessageWrap:(id)arg1"); %orig; NSLog(@"结束执行 - (void)reloadNodeWithMessageWrap:(id)arg1"); }
+- (void)removeObjectsFromMessageNodeDatas:(id)arg1 { %log; NSLog(@"开始执行 - (void)removeObjectsFromMessageNodeDatas:(id)arg1"); %orig; NSLog(@"结束执行 - (void)removeObjectsFromMessageNodeDatas:(id)arg1"); }
+- (void)removeAllObjectsFromMessageNodeDatas { %log; NSLog(@"开始执行 - (void)removeAllObjectsFromMessageNodeDatas"); %orig; NSLog(@"结束执行 - (void)removeAllObjectsFromMessageNodeDatas"); }
+- (unsigned long long)findNodeIndexByLocalId:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (unsigned long long)findNodeIndexByLocalId:(unsigned int)arg1"); unsigned long long r = %orig; NSLog(@"- (unsigned long long)findNodeIndexByLocalId:(unsigned int)arg1 的返回值 = %llu", r); NSLog(@"结束执行 - (unsigned long long)findNodeIndexByLocalId:(unsigned int)arg1"); return r; }
+- (NSString *)debugDescription { %log; NSLog(@"开始执行 - (NSString *)debugDescription"); NSString * r = %orig; NSLog(@"- (NSString *)debugDescription 的返回值 = %@", r); NSLog(@"结束执行 - (NSString *)debugDescription"); return r; }
+- (NSString *)description { %log; NSLog(@"开始执行 - (NSString *)description"); NSString * r = %orig; NSLog(@"- (NSString *)description 的返回值 = %@", r); NSLog(@"结束执行 - (NSString *)description"); return r; }
+- (unsigned long long )hash { %log; NSLog(@"开始执行 - (unsigned long long )hash"); unsigned long long  r = %orig; NSLog(@"- (unsigned long long )hash 的返回值 = %llu", r); NSLog(@"结束执行 - (unsigned long long )hash"); return r; }
+- (Class )superclass { %log; NSLog(@"开始执行 - (Class )superclass"); Class  r = %orig; NSLog(@"- (Class )superclass 的返回值 = %@", r); NSLog(@"结束执行 - (Class )superclass"); return r; }
+%end
