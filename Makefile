@@ -6,7 +6,7 @@ TARGET = iphone:10.2:10.0
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = wsmsgpreview
-wsmsgpreview_FILES = Tweak.xm
+wsmsgpreview_FILES = BaseMsgContentViewController.xm
 wsmsgpreview_FRAMEWORKS = UIKit Foundation
 #wsmsgpreview_CFLAGS = -fobjc-arc
 
