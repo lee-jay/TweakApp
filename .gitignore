@@ -5,6 +5,9 @@
 ## Build generated
 build/
 DerivedData/
+obj/
+packages/
+.theos/
 
 ## Various settings
 *.pbxuser
