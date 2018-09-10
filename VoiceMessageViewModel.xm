@@ -3,6 +3,7 @@
 	%log; 
 	NSLog(@"开始执行 - (void)onMessageStopPlaying"); 
 	%orig; 
+	/*
 	id delegate = nil;
 	{
 		SEL selector = NSSelectorFromString(@"delegate");
@@ -16,6 +17,7 @@
 			imp(delegate, selector, self);
 		}
 	}
+	*/
 	NSLog(@"结束执行 - (void)onMessageStopPlaying"); 
 }
 - (void)onMessageStartPlaying { %log; NSLog(@"开始执行 - (void)onMessageStartPlaying"); %orig; NSLog(@"结束执行 - (void)onMessageStartPlaying"); }
