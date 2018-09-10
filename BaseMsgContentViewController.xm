@@ -1,36 +1,80 @@
 
 %hook BaseMsgContentViewController
-%property(nonatomic, retain) NSMutableArray *voiceList;
-
-- (id)GetMessageNodeDataArray { 
-	%log; 
-	NSLog(@"开始执行 - (id)GetMessageNodeDataArray"); 
-	id r = %orig;
-	NSArray *list = r;
-	NSMutableArray *voices = [NSMutableArray arrayWithCapacity:0];
-    for (id item in list) {
-        if ([NSStringFromClass([item class]) isEqualToString:@"VoiceMessageViewModel"]) {
-            [voices addObject:item];
-        }
-    }
-    [self setValue:voices forKeyPath:@"voiceList"];
-	NSLog(@"- (id)GetMessageNodeDataArray 的返回值 = %@", [r description]); 
-	NSLog(@"结束执行 - (id)GetMessageNodeDataArray"); 
-	return r; 
-}
+//%property(nonatomic, retain) NSMutableArray *voiceList;
+- (void)startVoiceAnimatingAtNodeId:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (void)startVoiceAnimatingAtNodeId:(unsigned int)arg1"); %orig; NSLog(@"结束执行 - (void)startVoiceAnimatingAtNodeId:(unsigned int)arg1"); }
+- (void)StopPlayingNodeView:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (void)StopPlayingNodeView:(unsigned int)arg1"); %orig; NSLog(@"结束执行 - (void)StopPlayingNodeView:(unsigned int)arg1"); }
+- (void)StartPlayingNodeView:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (void)StartPlayingNodeView:(unsigned int)arg1"); %orig; NSLog(@"结束执行 - (void)StartPlayingNodeView:(unsigned int)arg1"); }
+- (void)updateMessageNodeStatus:(id)arg1 { %log; NSLog(@"开始执行 - (void)updateMessageNodeStatus:(id)arg1"); %orig; NSLog(@"结束执行 - (void)updateMessageNodeStatus:(id)arg1"); }
 
 %new(onMessageStopPlaying:)
 - (void)onMessageStopPlaying:(id)model { 
 	%log; 
 	NSLog(@"开始执行 new method at runtime: - (void)onMessageStopPlaying"); 
-	NSArray *voices = [self valueForKeyPath:@"voiceList"];
-    NSInteger index = [voices indexOfObject:model];
-    if (index < 0 || index+1 >= voices.count) { return; }
-    id next = [voices objectAtIndex:index+1];
+	NSArray *list = nil;
     {
-        SEL selector = NSSelectorFromString(@"onMessageStartPlaying");
-        IMP imp = [next methodForSelector:selector];
-        imp(next, selector);
+        SEL selector = NSSelectorFromString(@"GetMessagesWrapArray");
+        IMP imp = [self methodForSelector:selector];
+        list = imp(self, selector);
+    }
+    id messageWrap = nil; //CMessageWrap
+    {
+        SEL selector = NSSelectorFromString(@"messageWrap");
+        IMP imp = [model methodForSelector:selector];
+        messageWrap = imp(model, selector);
+    }
+    long long n64MesSvrID = 0;
+    {
+        SEL selector = NSSelectorFromString(@"m_n64MesSvrID");
+        IMP imp = [messageWrap methodForSelector:selector];
+        n64MesSvrID = (long long)imp(messageWrap, selector);
+    }
+    NSLog(@"n64MesSvrID=%lld", n64MesSvrID);
+    BOOL findNext = NO;
+    NSInteger index = 0;
+    for (id item in list) {
+    	NSLog(@"class=%@, item=%@", NSStringFromClass([item class]), [item description]);
+    	long long iterSvrID = 0;
+    	{
+        	SEL selector = NSSelectorFromString(@"m_n64MesSvrID");
+        	IMP imp = [item methodForSelector:selector];
+        	iterSvrID = (long long)imp(item, selector);
+    	}
+    	if (iterSvrID == n64MesSvrID) { findNext = YES; continue; }
+    	if (findNext) {
+    		int uiMessageType = 0;
+    		{
+        		SEL selector = NSSelectorFromString(@"m_uiMessageType");
+        		IMP imp = [item methodForSelector:selector];
+        		uiMessageType = (int)(long long)imp(item, selector);
+    		}
+    		NSLog(@"uiMessageType=%d", uiMessageType);
+    		if (uiMessageType == 34) {
+    			int uiMesLocalID = 0;
+    			{
+        			SEL selector = NSSelectorFromString(@"m_uiMesLocalID");
+        			IMP imp = [item methodForSelector:selector];
+        			uiMesLocalID = (int)(long long)imp(item, selector);
+    			}
+    			NSLog(@"index=%ld, uiMesLocalID=%d", (long)index, uiMesLocalID);
+    			{
+    				SEL selector = NSSelectorFromString(@"startVoiceAnimatingAtNodeId:");
+    				IMP imp = [self methodForSelector:selector];
+    				imp(self, selector, uiMesLocalID);
+    			}
+    			{
+    				SEL selector = NSSelectorFromString(@"StartPlayingNodeView:");
+    				IMP imp = [self methodForSelector:selector];
+    				imp(self, selector, uiMesLocalID);
+    			}
+    			{
+    				SEL selector = NSSelectorFromString(@"updateMessageNodeStatus:");
+    				IMP imp = [self methodForSelector:selector];
+    				imp(self, selector, item);
+    			}
+    			break;
+    		}
+    	}
+    	index ++;
     }
 	NSLog(@"结束执行 new method at runtime: - (void)onMessageStopPlaying"); 
 }
