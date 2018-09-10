@@ -1,26 +1,13 @@
 %hook BaseMsgContentViewController
-
-- (id)findNodeDataByLocalId:(unsigned int)arg1 { %log; NSLog(@"开始执行 - (id)findNodeDataByLocalId:(unsigned int)arg1"); id r = %orig; NSLog(@"- (id)findNodeDataByLocalId:(unsigned int)arg1 的返回值 = %@", r); NSLog(@"结束执行 - (id)findNodeDataByLocalId:(unsigned int)arg1"); return r; }
-
-- (void)StopPlayingNodeView:(unsigned int)arg1 { 
-	%log;
-	NSLog(@"开始执行 - (void)StopPlayingNodeView:(unsigned int)arg1");
-	%orig;
-	id model = nil;
-    {
-        SEL selector = NSSelectorFromString(@"findNodeDataByLocalId:");
-        IMP imp = [self methodForSelector:selector];
-        NSLog(@"arg1=%d", arg1);
-        model = imp(self, selector, arg1);
-    }
-	[self performSelector:@selector(onMessageStopPlaying:) withObject:model afterDelay:1.0f];
-	NSLog(@"结束执行 - (void)StopPlayingNodeView:(unsigned int)arg1");
-}
-
-
 %new(onMessageStopPlaying:)
 - (void)onMessageStopPlaying:(id)model { 
 	%log; 
+	[self performSelector:@selector(playNextAfterModel:) withObject:model afterDelay:1.0f];
+	NSLog(@"结束执行 new method at runtime: - (void)onMessageStopPlaying"); 
+}
+
+%new(playNextAfterModel:)
+- (void)playNextAfterModel:(id)model { 
 	if (model == nil) { return; }
 	NSLog(@"开始执行 new method at runtime: - (void)onMessageStopPlaying"); 
 	NSArray *list = nil;
@@ -89,6 +76,5 @@
     	}
     	index ++;
     }
-	NSLog(@"结束执行 new method at runtime: - (void)onMessageStopPlaying"); 
 }
 %end
