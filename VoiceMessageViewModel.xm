@@ -11,8 +11,10 @@
 	}
 	{
 		SEL selector = NSSelectorFromString(@"onMessageStopPlaying:");
-		IMP imp = [delegate methodForSelector:selector];
-		imp(delegate, selector, self);
+		if ([delegate respondsToSelector:selector]) {
+			IMP imp = [delegate methodForSelector:selector];
+			imp(delegate, selector, self);
+		}
 	}
 	NSLog(@"结束执行 - (void)onMessageStopPlaying"); 
 }

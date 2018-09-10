@@ -24,8 +24,14 @@
 	%log; 
 	NSLog(@"开始执行 new method at runtime: - (void)onMessageStopPlaying"); 
 	NSArray *voices = [self valueForKeyPath:@"voiceList"];
-	NSLog(@"voices=%@", voices);
-	NSLog(@"model=%@", model);
+    NSInteger index = [voices indexOfObject:model];
+    if (index < 0 || index+1 >= voices.count) { return; }
+    id next = [voices objectAtIndex:index+1];
+    {
+        SEL selector = NSSelectorFromString(@"onMessageStartPlaying");
+        IMP imp = [next methodForSelector:selector];
+        imp(next, selector);
+    }
 	NSLog(@"结束执行 new method at runtime: - (void)onMessageStopPlaying"); 
 }
 %end
