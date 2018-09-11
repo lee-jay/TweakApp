@@ -10,7 +10,7 @@ include $(THEOS)/makefiles/common.mk
 #]$(error $(_THEOS_INTERNAL_CFLAGS))
 
 TWEAK_NAME = wsmsgpreview
-$(TWEAK_NAME)_FILES = VoiceMessageViewModel.xm BaseMsgContentViewController.xm TweakUtils.m
+$(TWEAK_NAME)_FILES = BaseMsgContentViewController.xm TweakUtils.m
 $(TWEAK_NAME)_FRAMEWORKS = UIKit Foundation
 #wsmsgpreview_CFLAGS = -fobjc-arc
 
